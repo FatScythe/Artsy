@@ -1,23 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, BrowserRouter, Route, Navigate } from "react-router-dom";
+import Navbar from "./Components/Navbar/Navbar";
+import { useState } from "react";
+
+// pages
+import Home from "./Pages/Home";
+import Market from "./Pages/Market";
+import Auction from "./Pages/Auction";
+import Drops from "./Pages/Drops";
+// import Cart from "./Pages/Cart";
 
 function App() {
+  // const [cartIsEmpty, setCartIsEmpty] = useState(true);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/Market' element={<Market />} />
+          <Route path='/Auction' element={<Auction />} />
+          <Route path='/Drops' element={<Drops />} />
+          {/* <Route
+            path='/Cart'
+            element={cartIsEmpty ? <Navigate to='/Market' /> : <Cart />}
+          /> */}
+          <Route
+            path='*'
+            element={
+              <div>
+                <h1>Not Found :( </h1>
+              </div>
+            }
+          />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

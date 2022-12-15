@@ -1,0 +1,42 @@
+.links {
+    margin: 2rem 0;
+}
+
+.links .link {
+    border: 2px solid var(--gray);
+    border-right: 0;
+    border-left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem 2rem 2rem;
+}
+
+.links .link h2 {
+    font-weight: 500;
+    line-height: 4.05rem;
+    font-size: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+    .links {
+        margin: 0;
+    }
+
+    .links .link {
+        padding: 1rem;
+    }
+
+    .links .link h2 {
+        line-height: 2.025rem;
+        font-size: 1.5rem;
+    }
+
+    .links .link .arrow {
+        border: 2px solid var(--gray);
+        padding: 1.3rem 1rem;
+        border-radius: 50%;
+    }
+
+
+}

@@ -1,0 +1,196 @@
+#home .upcoming {
+    color: var(--white);
+    background: linear-gradient( to right, #4693ED 0%, #efb083 );
+    margin: 4rem 0;
+        
+}
+
+#home .upcoming .container h2 {
+    font-size: 2.5rem;
+    line-height: 104px;
+    font-weight: 500;
+}
+
+#home .upcoming .arrow svg {
+    width: 80%;
+    margin-bottom: 1rem;
+}
+
+#home .upcoming .upcoming-carousel {
+    background-image: url('../../images/upcoming/u-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+#home .upcoming .upcoming-carousel .overlay1 {
+    height: 18.75rem;
+}
+
+#home .upcoming .overlay {
+    margin: 0 3rem;
+    width: 95%;
+}
+
+#home .upcoming .upcoming-carousel .overlay .title h2 {
+    margin-left: 2.5rem;
+}
+
+#home .upcoming .upcoming-carousel .overlay .title h2, 
+#home .upcoming .upcoming-carousel .overlay .title p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 400;
+}
+
+#home .upcoming .upcoming-carousel .overlay .title h2 span:nth-child(1) {
+    align-self: flex-start;
+}
+
+#home .upcoming .upcoming-carousel .overlay .title h2 span:nth-child(1) svg {
+    width: 16px;
+    height: 16px;
+}
+
+#home .upcoming .upcoming-carousel .overlay .title h2 span:nth-child(2) {
+    font-size: 1.83rem;
+    line-height: 33.5px;
+    align-self: flex-end;
+}
+
+#home .upcoming .upcoming-carousel .overlay .title p .uno {
+    font-size: 4.26rem;
+}
+
+#home .upcoming .upcoming-carousel .overlay .title p .time {
+    font-size: 0.84rem;
+}
+
+#home .upcoming .overlay .subtitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+#home .upcoming .overlay .subtitle p {
+    font-weight: 500;
+    width: 628px;
+    min-width: 50%;
+    padding-left: 3.5rem;
+}
+
+#home .upcoming .overlay .subtitle .info, 
+#home .upcoming .overlay .subtitle button {
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--white);
+    cursor: pointer;
+}
+
+#home .upcoming .overlay .subtitle .info {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+}
+
+#home .upcoming .overlay .subtitle .info span {
+    text-decoration: underline;
+}
+
+#home .upcoming .overlay .subtitle button {
+    border: 1px solid var(--white);
+    background-color: transparent;
+    border-radius: 5px;
+    padding: .5rem 1rem;
+}
+
+#home .upcoming .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#home .upcoming .controls .chev-btn {
+    margin: 1rem;
+}
+
+#home .upcoming .controls .chev-btn button {
+    border-radius: 50%;
+    margin-right: 1rem;
+    padding: 1rem 1.3rem;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+@media screen and (max-width: 768px) {
+    #home .upcoming {
+        padding: 2rem 0;
+    }
+    #home .upcoming .upcoming-carousel .overlay1 {
+        height: 2rem;
+    }
+
+    #home .upcoming .upcoming-carousel .overlay .title h2 {
+        margin-left: 0;
+    }
+
+    #home .upcoming .upcoming-carousel .overlay .title h2 span:nth-child(1) {
+        align-self: flex-start;
+        height: 100%;
+    }
+
+    #home .upcoming .upcoming-carousel .overlay .title h2 span:nth-child(1) svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    #home .upcoming .upcoming-carousel .overlay .title h2 span:nth-child(2) {
+        align-self: center;
+        font-size: 1.43rem;
+        line-height: 22.92px; 
+    }
+
+    #home .upcoming .upcoming-carousel .overlay .title p .uno {
+        font-size: 2.5rem;
+    }
+
+    #home .upcoming .upcoming-carousel .overlay .title p .time {
+        font-size: 0.75rem;
+    }
+
+    #home .upcoming .overlay .subtitle {
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+
+    #home .upcoming .overlay .subtitle p {
+        font-size: 0.625rem;
+        width: 100%;
+    }
+
+    #home .upcoming .overlay .subtitle .info {
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    #home .upcoming .overlay .subtitle .info,
+    #home .upcoming .overlay .subtitle button {
+        font-size: .875rem;
+    }
+
+    #home .upcoming .controls {
+        display: none;
+    }
+}
