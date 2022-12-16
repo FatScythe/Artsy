@@ -1,0 +1,80 @@
+.newsletter {
+    margin: 9rem 0;
+}
+
+.newsletter main {
+    border: 1px solid black;
+    text-align: center;
+    padding: 4rem 2rem;
+    color: #333333;
+    font-weight: 400;
+}
+
+.newsletter main h2 {
+    font-size: 2rem;
+    line-height: 39px;
+    margin-bottom: 2rem;
+}
+
+.newsletter main p {
+    font-size: 2rem;
+    line-height: 43px;
+    margin-bottom: 2rem;
+}
+
+.newsletter main form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.newsletter main form input {
+    padding: 1rem 1.5rem;
+    width: 40%;
+    font-size: 1rem;
+}
+
+.newsletter main form button {
+    color: var(--white);
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    background-color: #333333;
+}
+
+@media screen and (max-width: 768px) {
+    .newsletter main {
+        border: 0;
+        text-align: left;
+        padding: 2rem 0rem;
+        margin-top: 2rem;
+    }
+
+    .newsletter main h2 {
+        font-size: 1.5rem;
+        line-height: 31px;
+        margin-bottom: 1rem;
+    }
+
+    .newsletter main p {
+        font-size: 0.73rem;
+        margin-bottom: 1rem;
+        line-height: 16px;
+        text-transform: uppercase;
+    }
+
+    .newsletter main form {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .newsletter main form input {
+        width: 100%;
+        font-size: 0.8rem;
+        text-transform: capitalize;
+    }
+
+    .newsletter main button {
+        font-size: 0.73rem;
+    }
+}

@@ -1,5 +1,7 @@
 import { Routes, BrowserRouter, Route, Navigate } from "react-router-dom";
+// components
 import Navbar from "./Components/Navbar/Navbar";
+import Footer from "./Components/Footer/footer";
 import { useState } from "react";
 
 // pages
@@ -33,6 +35,7 @@ function App() {
             }
           />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );

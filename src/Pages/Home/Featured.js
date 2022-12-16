@@ -11,7 +11,7 @@ import r5 from "../../images/featured/random5.png";
 
 const Featured = () => {
   return (
-    <div className='featured container'>
+    <section className='featured container'>
       <h1>Featured products</h1>
       <hr className='d-none' />
       <SingleFeatured
@@ -27,7 +27,7 @@ const Featured = () => {
       <SingleFeatured
         settings={{ reverse: false, title: "Olobiri 1997", img: pharaoh }}
       />
-    </div>
+    </section>
   );
 };
 

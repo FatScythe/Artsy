@@ -6,7 +6,7 @@ import mc5 from "../../images/carousel-images/car4.png";
 import mc6 from "../../images/carousel-images/car5.png";
 const Hero = () => {
   return (
-    <div className='hero'>
+    <section className='hero'>
       <h1 className='clash'>
         Photography is poetry <span className='d-none'>&</span>
         <span className='d-md-none'>and</span> beautiful untold stories
@@ -57,7 +57,7 @@ const Hero = () => {
         <img src={mc3} alt='hero-gallery' draggable='false' />
         <img src={mc4} alt='hero-gallery' draggable='false' />
       </div>
-    </div>
+    </section>
   );
 };
 

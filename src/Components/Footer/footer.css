@@ -1,0 +1,80 @@
+footer {
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+footer h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 16px;
+    color: #333333;
+    margin: 3rem 2rem;
+}
+
+footer .container .logo,
+footer .container .links,
+footer .container .services,
+footer .container .contact {
+    flex-basis: 25%;
+}
+
+footer .container .logo {
+    align-self: center;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 59px;
+    color: #292929;
+    text-align: center;
+}
+
+footer .container .links {
+    margin: 0;
+}
+
+footer .container .links li,
+footer .container .services li,
+footer .container .contact {
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-size: 1.625rem;
+    line-height: 35px;
+    color: #333333;
+}
+
+footer .container .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* justify-content: flex-start; */
+    align-items: flex-start;
+}
+
+footer .container .contact a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+footer .copyright {
+    text-align: center;
+    letter-spacing: -0.02em;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    color: var(--gray);
+    line-height: 21px;
+}
+
+@media screen and (max-width: 850px) {
+    footer .container .logo {
+        font-size: 2.5rem;
+    }
+    
+}

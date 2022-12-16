@@ -7,7 +7,7 @@ import {
 } from "../../Components/Icons/icons";
 const Upcoming = () => {
   return (
-    <div className='upcoming'>
+    <section className='upcoming'>
       <div className='container'>
         <h2 className='d-none'>See Upcoming Auctions and Exhibitions</h2>
         <div className='d-none arrow'>
@@ -71,7 +71,7 @@ const Upcoming = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

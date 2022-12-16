@@ -1,0 +1,143 @@
+section.creators {
+    background-color: #E2E2E2;
+    height: 100%;
+    position: relative;
+    margin: 6rem 0;
+    padding: 2rem 0;
+    z-index: 4;
+}
+
+section.creators .img {
+    position: absolute;
+    background-color: rgba(0,0,0, 0.04);
+    width: 50%;
+    height: 100%;
+    top: 16%;
+    left: 35%;
+}
+
+section.creators img {
+    height: 100%;
+    z-index: 3;
+}
+
+section.creators .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+}
+
+section.creators .title h2 {
+    width: 60%;
+    font-weight: 600;
+    font-size: 3.44rem;
+    line-height: 5.53rem;
+    align-self: flex-start;
+}
+
+section.creators .title ul {
+    display: flex;
+    justify-content: space-between;
+}
+section.creators .title ul .list {
+    margin-left: 1rem;
+}
+
+section.creators .title ul li {
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 62.2px;
+    color: #333333;
+    margin-bottom: .6rem;
+}
+
+section.creators p {
+    color: rgba(0,0,0, 0.57);
+    font-weight: 200;
+    line-height: 41.6px;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+section.creators .img div {
+    position: absolute;
+    bottom: 20%;
+    right: -25%;
+    z-index: -2;
+}
+
+section.creators .location {
+    font-weight: 700;
+    font-style: normal;
+    line-height: 155.5%;
+    font-size: 3rem;
+    color: #333333;
+}
+
+section.creators .year {
+    text-decoration: line-through;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 10.625rem;
+    color: #161616;
+}
+
+@media screen and (max-width: 768px) {
+    section.creators .img {
+        top: 28%;
+    }
+
+    section.creators .title h2 {
+        width: 80%;
+        font-size: 1.5rem;
+        line-height: 37.32px;
+    }
+    
+    section.creators .title ul .list {
+        position: absolute;    
+        top: 0;
+        right: -22%;
+    }
+
+    section.creators .title ul li  {
+        display: inline;
+        font-size: 0.6255rem;
+        line-height: 15.5px;
+        margin-bottom: 0rem;
+        margin-left: .4rem;
+    }
+
+    section.creators .title ul li span {
+        display: inline;
+        margin-right: .3rem;
+    }
+
+    section.creators .title ul li span svg circle,
+    section.creators .title ul li span svg {
+        height: 8px;
+        width: 8px;
+        fill: var(--black);
+    }
+
+    section.creators p {
+        text-align: center;
+        line-height: 16.9px;
+        font-size: 0.8125rem;
+    }
+
+    section.creators .img div {
+        right: -28%;
+    }
+
+    section.creators .location {
+        text-align: right;
+        line-height: 49.76px;
+        font-size: 2rem;
+    }
+
+    section.creators .year {
+        font-size: 4rem;
+        line-height: 99.52px;
+    }
+}

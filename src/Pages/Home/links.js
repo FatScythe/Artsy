@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import { Arrow, ArrowBlueLarge } from "../../Components/Icons/icons";
 const Links = () => {
   return (
-    <div className='links'>
+    <section className='links'>
       <Href name='Explore marketplace' to='/market' />
       <Href name='See auctions' to='/auction' />
-    </div>
+    </section>
   );
 };
 

@@ -4,6 +4,7 @@ import Featured from "./Featured";
 import Upcoming from "./upcoming";
 import Links from "./links";
 import NewsLetter from "./newsletter";
+import Creators from "./creators";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Featured />
       <Upcoming />
       <Links />
+      <Creators />
       <NewsLetter />
     </header>
   );
