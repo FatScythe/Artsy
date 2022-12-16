@@ -33,7 +33,7 @@ const Navbar = () => {
         {links.map((to) => {
           const { id, link, name } = to;
           return (
-            <NavLink key={id} to={link}>
+            <NavLink key={id} to={link} onClick={() => setIsSideBarOpen(false)}>
               <li>{name}</li>
             </NavLink>
           );

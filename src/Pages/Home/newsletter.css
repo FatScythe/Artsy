@@ -43,6 +43,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    .newsletter {
+        margin: 3rem 0;
+    }
+    
     .newsletter main {
         border: 0;
         text-align: left;
