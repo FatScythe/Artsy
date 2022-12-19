@@ -1,0 +1,68 @@
+.marketplace {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.market {
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: minmax(100px, auto);
+    gap: 1rem;
+}
+
+.market .search {
+    grid-column: 1/4;
+}
+
+.market .result {
+    grid-column: 4/13;
+}
+
+.marketplace .result .btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.marketplace button.d-none {
+    margin: 4rem 0;
+    font-weight: 500;
+    font-size: 1.875rem;
+    line-height: 40.5px;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:768px) {
+    .market .search {
+        grid-column: 1/13;
+    }
+
+    .market .result {
+        grid-column: 1/13;
+    }
+
+    .marketplace button.d-md-none {
+        display: flex;
+        background-color: transparent;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+
+    .marketplace button.d-md-none span:first-child {
+        font-weight: 400;
+        font-size: 1.25rem;
+        line-height: 31.52px;
+    }
+
+    .marketplace button.d-md-none span:last-child {
+        border: 1px solid black;
+        padding: 1rem .6rem;
+        border-radius: 50%;
+    }
+}

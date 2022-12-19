@@ -1,0 +1,335 @@
+.marketplace .newsletter {
+    margin: .5rem 0;
+    display: none;
+}
+
+.search-bar {
+    position: relative;
+}
+
+.search-bar svg {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 25%;
+    left: 5%;
+}
+
+.search-bar .search-input {
+    width: 90%;
+    height: 3.75rem;
+    padding: 0rem 3.5rem;
+    font-size: 1.5rem;
+    border: 0;
+    outline: 0;
+    background-color: #F4F2F2;
+    border-radius: 15px;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+} 
+
+.search-bar .search-input::placeholder {
+    font-size: 1.3rem;
+}
+
+.search .filters h3.filter-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+.search .filters h3 .title {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 50.43px;
+}
+
+.search .filters hr {
+    height: 6px;
+    background: #AFB091;
+    border-radius: 10px;
+}
+
+.search .filters h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.search .filters h3 .sub-title {
+    font-weight: 500;
+    font-size: 1.75rem;
+    line-height: 157.6%;
+}
+
+.search .filters .categories .category {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.search .filters .categories .category .sub {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.search .filters .categories .category .sub input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.search .filters .categories .category .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.search .filters .categories .category .sub:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.search .filters .categories .category .sub input:checked~.checkmark {
+    background-color: #D9D9D9;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.search .filters .categories .category .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.search .filters .categories .category .sub input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.search .filters .categories .category .sub .checkmark:after {
+    left: 9px;
+    top: 1px;
+    width: 10px;
+    height: 15px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.search .filters .categories .category .sub,
+.search .filters .prices .price p,
+.search .filters .artists .price-range p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 32px;
+    color: #292929;
+}
+
+.search .filters .prices .price .range-input {
+    position: relative;
+}
+
+.search .filters .prices .price .range-input svg {
+    position: absolute;
+    top: 32%;
+    left: -2%;
+    border-radius: 50%;
+    border: 2px solid #1E1E1E;
+}
+
+.search .filters .prices .price input[type=range] {
+    position: static;
+    height: 31px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+.search .filters .prices .price input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 0px 0px 0px #002200;
+    background: #B8BCB5;
+    border-radius: 7px;
+    border: 0px solid #18D501;
+}
+
+.search .filters .prices .price input[type=range]::-webkit-slider-thumb {
+    box-shadow: 3px 3px 3px #000000;
+    border: 2px solid #333333;
+    height: 20px;
+    width: 20px;
+    border-radius: 46px;
+    background: #333333;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -8px;
+}
+
+.search .filters .prices .price input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #B8BCB5;
+}
+
+.search .filters .prices .price input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 0px 0px 0px #002200;
+    background: #B8BCB5;
+    border-radius: 7px;
+    border: 0px solid #18D501;
+}
+
+.search .filters .prices .price input[type=range]::-moz-range-thumb {
+    box-shadow: 3px 3px 3px #000000;
+    border: 2px solid #333333;
+    height: 20px;
+    width: 20px;
+    border-radius: 46px;
+    background: #333333;
+    cursor: pointer;
+}
+
+.search .filters .prices .price input[type=range]::-ms-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+.search .filters .prices .price input[type=range]::-ms-fill-lower {
+    background: #B8BCB5;
+    border: 0px solid #18D501;
+    border-radius: 14px;
+    box-shadow: 0px 0px 0px #002200;
+}
+
+.search .filters .prices .price input[type=range]::-ms-fill-upper {
+    background: #B8BCB5;
+    border: 0px solid #18D501;
+    border-radius: 14px;
+    box-shadow: 0px 0px 0px #002200;
+}
+
+.search .filters .prices .price input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 3px 3px 3px #000000;
+    border: 2px solid #333333;
+    height: 20px;
+    width: 20px;
+    border-radius: 46px;
+    background: #333333;
+    cursor: pointer;
+}
+
+.search .filters .prices .price input[type=range]:focus::-ms-fill-lower {
+    background: #B8BCB5;
+}
+
+.search .filters .prices .price input[type=range]:focus::-ms-fill-upper {
+    background: #B8BCB5;
+}
+
+.search .filters .artists .price-range p {
+    margin-bottom: 1rem;
+}
+
+.search .filters .artists .price-range p:first-child {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px ) {
+    .marketplace .newsletter {
+            margin: .5rem 0;
+            display: block;
+    }
+
+    .marketplace .newsletter main.container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .search .search-mobile .info p:first-child,
+    .search .search-mobile .info p:last-child {
+        margin-bottom: 1rem;
+        font-weight: 500;
+        font-size: 1.125rem;
+        line-height: 51.5px;
+        color: var(--gray);
+    }
+
+    .search .search-mobile .info p:last-child {
+        font-style: italic;
+    }
+
+    .search .search-mobile .info p:first-child span:last-child {
+        color: #292929;
+    }
+
+    .search .filters {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--white);
+        border-radius: 8px;
+        box-shadow:  0 5px 15px rgba(0, 0, 0, 0.1);
+        padding: 1rem .8rem;
+    }
+
+    .search .filters .filter,
+    .search .filters .sort {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .search .filters label {
+        line-height: 24.3px;
+        font-weight: 600;
+        font-size: 1.125rem;
+    }
+
+    .search .filters select {
+        width: 20px;
+        border: 0;
+        outline: 0;
+        background-color: transparent;  
+    }
+
+}

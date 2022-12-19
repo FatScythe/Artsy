@@ -9,6 +9,7 @@ import Home from "./Pages/Home";
 import Market from "./Pages/Market";
 import Auction from "./Pages/Auction";
 import Drops from "./Pages/Drops";
+import Product from "./Pages/Market/product-detail/product";
 // import Cart from "./Pages/Cart";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path='/Market' element={<Market />} />
           <Route path='/Auction' element={<Auction />} />
           <Route path='/Drops' element={<Drops />} />
+          <Route path='/product-detail/:id' element={<Product />} />
           {/* <Route
             path='/Cart'
             element={cartIsEmpty ? <Navigate to='/Market' /> : <Cart />}

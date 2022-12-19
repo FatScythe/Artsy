@@ -1,0 +1,86 @@
+.explore-container { 
+   margin-bottom: 2rem;
+}
+
+.explore-container .explore-card {
+    border: 1px solid #333;
+    width: 529px;
+    height: 579px;
+    padding: 0 1rem;
+}
+
+.explore-container .explore-card .like {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.explore-container .explore-card img {
+    height: 421px;
+    object-fit: cover;
+}
+
+.explore-container .explore-card .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 31.23px;
+    text-transform: capitalize;
+}
+
+.explore-container .explore-card .title svg {
+    width: 30px;
+    height: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .explore-container .explore-card {
+        position: relative;
+        padding: 0 .5rem;
+        width: 100%;
+        /* 398px */
+        height: 509px;
+    }
+
+    .explore-container .explore-card .like {
+        margin-bottom: .2rem;
+    }
+
+    .explore-container .explore-card .overlay-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 85%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .explore-container .explore-card .overlay-btn button {
+        background-color: transparent;
+        border-radius: 50%;
+        padding: 1rem 1.2rem;
+        border: 1px solid var(--white);
+    }
+
+    .explore-container .explore-card .overlay-btn button svg {
+        width: 30px;
+        height: 30px;
+        fill: white;
+    }
+
+    .explore-container .explore-card .title {
+        margin: 0;
+        font-size: 1.5rem;
+        line-height: 23.42px;
+    }
+
+    .explore-container .explore-card .title svg {
+        width: 23px;
+        height: 23px;
+    }
+}

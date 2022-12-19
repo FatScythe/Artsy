@@ -1,0 +1,112 @@
+.results .sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 1rem .8rem;
+}
+
+.results .sort p,
+.results .sort label {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 37.82px;
+}
+
+.results .sort div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid #000;
+    border-radius: 8px;
+    padding: .5rem 1rem;
+}
+
+.results .sort label {
+    font-weight: 500;
+}
+
+.results .sort select {
+    width: 20px;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+}
+
+.results .sort option {
+    font-size: 1.5rem;
+}
+
+.results .products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.results .products .product-card {
+    flex: 0 1 calc(25%-1em);
+}
+
+.results .products .product-card img {
+    width: 241px;
+    height: 280px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.results .products .product-card h3 {
+    font-weight: 400;
+    font-size: 1.375rem;
+    line-height: 34.67px;
+    color: #333333;
+}
+
+.results .products .product-card p {
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 44.13px;
+    color: #333333;
+}
+
+@media screen and (max-width: 768px){
+
+    .results .sort {
+        display: none;
+    }
+
+    .results .products {
+        gap: 2.5rem;
+    }
+
+    .results .products .product-card {
+        flex: 0 1 95%;
+    }
+
+    .results .products .product-card img {
+        height: 384px;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .results .products .product-card .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .results .products .product-card h3,
+    .results .products .product-card p {
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 25.22px;
+    }
+
+    
+    
+}
