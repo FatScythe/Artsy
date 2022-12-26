@@ -1,0 +1,301 @@
+.live-bid {
+    height: 100vh;
+}
+.live-bid h2 {
+    text-transform: capitalize;
+    font-size: var(--text-xs);
+    font-weight: 500;
+    color: #BCB7B7;
+    line-height: 51.5px;
+}
+
+.live-bid h2 span {
+    color: #000;
+}
+
+.live-bid main {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    height: 70vh;
+    padding: -40px 0;
+    border: 1px solid #000;
+    margin: 2rem 0;
+}
+
+.live-bid main .img{
+    flex-basis: 50%;
+}
+
+.live-bid main .img {
+    position: relative;
+}
+
+.live-bid main img {
+    object-fit: cover;
+}
+
+.live-bid main .overlay {
+    position: absolute;
+    color: var(--white);
+}
+
+.live-bid main .img .overlay.close-live {
+    top: 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 .8rem;
+    color: var(--white);
+}
+
+.live-bid main .img .overlay.close-live svg path {
+    fill: var(--white);
+}
+
+.live-bid main .img .overlay.close-live span:first-child {
+    background-color: rgba(245, 244, 244, 0.24);
+    backdrop-filter: blur(4px);
+    padding: .8rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.live-bid main .img .overlay.close-live span:last-child {
+    background-color: #4693ED;
+    font-weight: 500;
+    font-size: var(--text-xs);
+    border-radius: 25px;
+    padding: .5rem 1.3rem;
+    text-transform: uppercase;
+}
+
+.live-bid main .img .overlay.bid {
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: capitalize;
+    font-size: var(--text-sm);
+    font-weight: 600;
+}
+
+.live-bid main .img .overlay.tag {
+    bottom: 4%;
+    left: 4%;
+    text-transform: capitalize;
+    font-size: var(--text-xs);
+    font-weight: 500;
+    line-height: 37.82px;
+}
+
+.live-bid main .comment-section {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.live-bid main .comment-section .comments {
+    flex-basis: 80%;
+}
+
+.live-bid main .comment-section .comment {
+    flex-basis: 20%;
+}
+
+.live-bid main .comment-section .comment p {
+    text-transform: capitalize;
+    font-style: italic;
+    color: #BAB9B9;
+    font-size: var(--text-xs);
+}
+
+.live-bid main .comment-section .comment .input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.live-bid main .comment-section .comment .input div:first-child {
+    flex-basis: 80%;
+    position: relative;
+}
+
+.live-bid main .comment-section .comment .input input {
+    height: 50px;
+    width: 100%;
+    border: 1px solid #78A3AD;
+    border-radius: 25px;
+    font-size: var(--text-sm);
+    padding: 0 1rem;
+}
+
+.live-bid main .comment-section .comment .input input::placeholder {
+    font-weight: 500;
+    font-size: var(--text-xs);
+}
+
+.live-bid main .input .overlay.send {
+    top: 15%;
+    right: 5%;
+}
+
+.live-bid main .comment-section .comment .input div:last-child {
+    flex-basis: 20%;
+}
+
+.live-bid main .comment-section .comment .input .love {
+    width: fit-content;
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.live-bid h1 {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    font-size: var(--text-lg);
+    line-height: 64px;
+    font-weight: 500;
+}
+
+.live-bid h1 span::first-letter {
+    text-transform: capitalize;  
+}
+
+.live-bid h1 button {
+    background-color: transparent;
+    padding: 1.2rem 1rem;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .live-bid.container {
+    width: 100%;
+  }  
+
+  .live-bid .mobile {
+    overflow-x: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .live-bid main {
+    border: 0;
+  }
+
+  .live-bid main img {
+    margin-top: -2rem;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  .live-bid .mobile .title {
+    top: 3%;
+    display: flex;
+    width: 100%;
+    padding: 0 .8rem;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+  }
+
+  .live-bid .mobile .title .tag {
+    text-transform: capitalize;
+    font-size: var(--text-xs);
+  }
+
+  .live-bid .mobile .title .live-cancel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .live-bid .mobile .title .live-cancel .live {
+    background-color: #4693ED;
+    font-weight: 500;
+    font-size: var(--text-xs);
+    padding: .5rem .8rem;
+    color: var(--white);
+    text-transform: uppercase;
+  }
+
+  .live-bid .mobile .title .live-cancel .viewers {
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+    font-size: var(--text-xs);
+    padding: .4rem;
+    background-color: rgba(245, 244, 244, 0.24);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+  }
+
+  .live-bid .mobile .title .live-cancel .close {
+    margin-left: .8rem;
+  }
+
+  .live-bid .mobile .title .live-cancel svg path {
+        fill: var(--white);
+  }
+
+  .live-bid .mobile .title .live-cancel svg {
+    width: 18px;
+    height: 18px;
+  }
+
+
+  .live-bid main .comment-section {
+      bottom: 0;
+      height: 60vw;
+      width: 100%;
+      padding: .5rem;
+  }
+
+  .live-bid main .comment-section .comment .input input {
+      border: 1px solid var(--white);
+      background: transparent;
+  }
+
+  .live-bid main .comment-section .comment .input input::placeholder {
+      font-weight: 400;
+      color: var(--white);
+  }
+
+  .live-bid main .input .overlay.send svg path {
+    fill: #fff;
+  }
+
+  .live-bid main .input svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .live-bid main .comment-section .comment .input .love {
+    background-color: rgba(245, 244, 244, 0.24);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    border: 0;
+    padding: .5rem .8rem;
+  }
+
+  
+
+
+}

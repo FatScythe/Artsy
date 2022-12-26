@@ -13,7 +13,7 @@ import NewsLetter from "./newsletter";
 import Creators from "./creators";
 
 const Home = () => {
-  const { footerContainer } = useGlobalArtsyContext();
+  const { footerContainer, products } = useGlobalArtsyContext();
 
   useEffect(() => {
     footerContainer.current.style.display = "block";
@@ -21,7 +21,7 @@ const Home = () => {
   return (
     <header id='home'>
       <Hero />
-      <Featured />
+      <Featured {...products} />
       <Upcoming />
       <Links />
       <Creators />

@@ -1,0 +1,211 @@
+.bids {
+    margin-bottom: 2rem;
+}
+.bids h2 {
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 64px;
+}
+
+.bids .bid-card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.bids .bid-card-container .bid-card {
+    flex-basis: 48%;
+}
+
+.bids .bid-card-container .bid-card header {
+    width: 100%;
+    max-width: 545px;
+    height: 498px;
+    border-radius: 8px;
+    background-color: var(--white);
+    box-shadow: var(--dark-shadow);
+}
+
+.bids .bid-card-container .bid-card header .love {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 1rem .5rem;
+}
+
+.bids .bid-card-container .bid-card header .love div {
+    border: 1px solid #000;
+    border-radius: 50%;
+    padding: 1rem;
+    margin-top: .5rem;
+}
+
+.bids .bid-card-container .bid-card header .img {
+    height: 280px;
+}
+
+.bids .bid-card-container .bid-card header h3 {
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    line-height: 64px;
+}
+
+.bids .bid-card-container .bid-card footer {
+    margin: 2rem 0;
+}
+
+.bids .bid-card-container .bid-card footer h4 {
+    margin-top: 1rem;
+}
+
+.bids .bid-card-container .bid-card footer h4 span:first-child {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 64px;
+    color: #616161;
+}
+
+.bids .bid-card-container .bid-card footer h4 span:first-child span {
+    color: #000;
+}
+
+.bids .bid-card-container .bid-card footer h4 .data{
+    margin-left: 1rem;
+    text-transform: capitalize;
+}
+
+.bids .bid-card-container .bid-card footer h4 span:last-child {
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 64px;
+}
+
+.bids .bid-card-container .bid-card footer .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F7F4F4;
+    margin-top: 1rem;
+    padding: 0 .5rem;
+}
+
+.bids .bid-card-container .bid-card footer .bottom div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 64px;
+    color: #616161;
+}
+
+.bids .bid-card-container .bid-card footer .bottom div:first-child p {
+    color: #000;
+}
+
+.bids .bid-card-container .bid-card footer .bottom button {
+    background-color: #3341C1;
+    padding: 1.3rem 2rem;
+    color: var(--white);
+    font-weight: 500;
+    font-size: 1.61125rem;
+}
+
+@media screen and (max-width: 768px) {
+    .bids {
+        margin-bottom: 2rem;
+    }
+
+    .bids h2 {
+        font-weight: 500;
+        font-size: 1.25rem;
+        line-height: 27px;
+    }
+
+    .bids .bid-card-container {
+        flex-direction: column;
+    }
+
+    .bids .bid-card-container .bid-card {
+        flex-basis: 100%;
+    }
+
+    .bids .bid-card-container .bid-card header {
+        max-width: 398px;
+        height: 256px;
+    }
+
+    .bids .bid-card-container .bid-card header .love {
+        margin: .5rem;
+    }
+
+    .bids .bid-card-container .bid-card header .love div {
+        padding: .4rem .5rem;
+        margin-top: .3rem;
+    }
+
+    .bids .bid-card-container .bid-card header .love svg {
+        width: 19px;
+        height: 16px;
+    }
+
+    .bids .bid-card-container .bid-card header .img {
+        height: 168px;
+    }
+
+    .bids .bid-card-container .bid-card header h3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 700;
+        font-size: 1.25rem;
+        margin-left: 0;
+        line-height: 27px;
+        margin-bottom: 1rem;
+    }
+
+    .bids .bid-card-container .bid-card footer {
+        margin: 2rem 0;
+    }
+
+    .bids .bid-card-container .bid-card footer h4 {
+        margin-top: 1rem;
+    }
+
+    .bids .bid-card-container .bid-card footer h4 span:first-child {
+        font-size: 1.2rem;
+        line-height: 27px;
+    }
+
+    .bids .bid-card-container .bid-card footer h4 .data {
+        margin-left: 1rem;
+    }
+
+    .bids .bid-card-container .bid-card footer h4 span:last-child {
+        font-size: 1.2rem;
+        line-height: 27px;
+    }
+
+    .bids .bid-card-container .bid-card footer .bottom div:first-child {
+        gap: 2rem;
+        font-size: 1.2rem;
+        line-height: 27px;
+    }
+
+    .bids .bid-card-container .bid-card footer .bottom div:first-child p {
+        color: #000;
+    }
+
+    .bids .bid-card-container .bid-card footer .bottom button {
+        background-color: #3341C1;
+        padding: .8rem 1.5rem;
+        color: var(--white);
+        font-weight: 500;
+        font-size: 1rem;
+    }
+    
+}

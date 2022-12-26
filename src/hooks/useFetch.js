@@ -16,7 +16,6 @@ const UseFetch = (URL) => {
         return res.json();
       })
       .then((data) => {
-        console.log(data);
         setIsLoading(false);
         setData(data);
       })

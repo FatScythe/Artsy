@@ -1,32 +1,48 @@
 import "./featured.css";
 import { Arrow } from "../../Components/Icons/icons";
-import cleoptara from "../../images/featured/f1.png";
-import hieroglyphs from "../../images/featured/f2.png";
-import pharaoh from "../../images/featured/f3.png";
+// import cleoptara from "../../images/featured/f1.png";
+// import hieroglyphs from "../../images/featured/f2.png";
+// import pharaoh from "../../images/featured/f3.png";
 import r1 from "../../images/featured/random1.png";
 import r2 from "../../images/featured/random2.png";
 import r3 from "../../images/featured/random3.png";
 import r4 from "../../images/featured/random4.png";
 import r5 from "../../images/featured/random5.png";
 
-const Featured = () => {
+import Loader from "../../Components/Loader/loader";
+const Featured = ({ isLoading, data, isError }) => {
+  if (isLoading) {
+    return <Loader />;
+  }
+
+  if (isError) {
+    return <h2>Error...</h2>;
+  }
+
+  const featured = data.featured_products;
+
   return (
     <section className='featured container'>
       <h1>Featured products</h1>
       <hr className='d-none' />
-      <SingleFeatured
-        settings={{ reverse: false, title: "Boolean Egyptian", img: cleoptara }}
-      />
-      <SingleFeatured
-        settings={{
-          reverse: true,
-          title: "Are We There Yet?",
-          img: hieroglyphs,
-        }}
-      />
-      <SingleFeatured
-        settings={{ reverse: false, title: "Olobiri 1997", img: pharaoh }}
-      />
+      {featured.map((product, index) => {
+        const reverse = (index + 1) % 2 === 0 ? true : false;
+        const title = [
+          "Boolean Egyptian",
+          "Are We There Yet ?",
+          "Olobiri 1997",
+        ];
+        return (
+          <SingleFeatured
+            key={product.id}
+            settings={{
+              reverse,
+              title: title[index],
+              img: product.url,
+            }}
+          />
+        );
+      })}
     </section>
   );
 };
@@ -37,7 +53,13 @@ const SingleFeatured = ({ settings }) => {
     <>
       <div className={`${reverse ? "products reverse" : "products"}`}>
         <div className='img'>
-          <img src={img} alt='product' draggable='false' />
+          <img
+            className='featured-img'
+            src={img}
+            alt={title}
+            draggable='false'
+            loading='lazy'
+          />
 
           <div className='overlay'>
             <div className='overlay-content'>
@@ -53,7 +75,7 @@ const SingleFeatured = ({ settings }) => {
         </div>
 
         <div className='title'>
-          <h3 className='stix d-none'>The Boolean Egyptian</h3>
+          <h3 className='stix d-none'>{title}</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
             purus sit amet luctus venenatis, lectus magna fringilla urna,

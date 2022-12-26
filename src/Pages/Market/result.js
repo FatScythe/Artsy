@@ -1,11 +1,13 @@
 import "./result.css";
 import { Link } from "react-router-dom";
+import Loader from "../../Components/Loader/loader";
 
 const Result = ({ data, isLoading, isError }) => {
   const products = data.products;
+  console.log(products);
 
   if (isLoading) {
-    return <h2>Loading...</h2>;
+    return <Loader />;
   }
 
   if (isError) {
@@ -33,7 +35,6 @@ const Result = ({ data, isLoading, isError }) => {
         {products.map((products) => {
           return <Card {...products} key={products.id} />;
         })}
-        <Card />
       </div>
     </section>
   );

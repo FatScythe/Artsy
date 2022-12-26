@@ -1,8 +1,8 @@
-import { Routes, BrowserRouter, Route, Navigate } from "react-router-dom";
+import { Routes, BrowserRouter, Route } from "react-router-dom";
 // components
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/footer";
-import { useState } from "react";
+// import { useState } from "react";
 
 // pages
 import Home from "./Pages/Home";
@@ -10,6 +10,7 @@ import Market from "./Pages/Market";
 import Auction from "./Pages/Auction";
 import Drops from "./Pages/Drops";
 import Product from "./Pages/Market/product-detail/product";
+import LiveBid from "./Pages/Auction/LiveBid/livebid";
 // import Cart from "./Pages/Cart";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/Market' element={<Market />} />
           <Route path='/Auction' element={<Auction />} />
+          <Route path='/live-bid/:id' element={<LiveBid />} />
           <Route path='/Drops' element={<Drops />} />
           <Route path='/product-detail/:id' element={<Product />} />
           {/* <Route

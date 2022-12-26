@@ -99,7 +99,7 @@ const Product = () => {
         </div>
       </div>
 
-      <div className='explore'>
+      <div className='explore-title'>
         <p>
           <span className='d-none'>Explore</span> more from this collection
         </p>

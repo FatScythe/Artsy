@@ -1,0 +1,74 @@
+.auction .auction-card {
+    border-radius: 8px;
+    position: relative;
+}
+
+.auction .auction-card img {
+    width: 485px;
+    height: 396px;
+    object-fit: cover;
+}
+
+.auction .auction-card .overlay {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgba(245, 244, 244, 0.24);
+    backdrop-filter: blur(4px);
+    font-weight: 500;
+    color: var(--white);
+    font-size: 2.5rem;
+    line-height: 64px;
+}
+
+.explore-container .explore-card {
+    scroll-snap-align: start;
+    border: 1px solid #333;
+    min-width: 529px;
+    height: 579px;
+    padding: 0 1rem;
+}
+
+.explore-container .explore-card .like {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.explore-container .explore-card img {
+    height: 421px;
+    object-fit: cover;
+}
+
+.explore-container .explore-card .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 31.23px;
+    text-transform: capitalize;
+}
+
+.explore-container .explore-card .title svg {
+    width: 30px;
+    height: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .auction .auction-card img {
+        width: 228px;
+        height: 186px;
+    }
+
+    .auction .auction-card .overlay {
+        font-weight: 400;
+        font-size: 1.25rem;
+        line-height: 25px;
+    }
+}

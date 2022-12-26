@@ -1,10 +1,20 @@
 .explore-container { 
-   margin-bottom: 2rem;
+   display: flex;
+   overflow-x: auto;
+   gap: 2rem;
+   scroll-snap-type: mandatory;
+   padding: 1rem 0;
+   scrollbar-width: none;
+}
+
+.explore-container::-webkit-scrollbar {
+    display: none;
 }
 
 .explore-container .explore-card {
+    scroll-snap-align: start;
     border: 1px solid #333;
-    width: 529px;
+    min-width: 529px;
     height: 579px;
     padding: 0 1rem;
 }
@@ -36,11 +46,70 @@
     height: 30px;
 }
 
+.explore .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.explore .btn button {
+    font-weight: 500;
+    position: relative;
+    font-size: 2.25rem;
+    /* color: white; */
+    line-height: 35.14px;
+    background: linear-gradient(to right,#78A3Ad,#C05609);
+    padding: 20px 60px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.explore .btn button::before {
+        content: "";
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        bottom: 1px;
+        left: 1px;
+        background-color: var(--white);
+        border-radius: 4px;
+        z-index: -1;
+        transition: 200ms
+}
+
+.explore .btn button::after {
+    content: attr(data);
+    font-size: 2.25rem;
+    background: linear-gradient(to left, #78A3Ad, #C05609);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: 200ms
+}
+
+.explore .btn button:hover::before {
+    opacity: 50%;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.explore .btn button:hover::after {
+    color: white;
+}
+
 @media screen and (max-width: 768px) {
+    .explore-container {
+        display: block;
+        width: fit-content;
+        margin-bottom: 2rem;
+    }
+
     .explore-container .explore-card {
         position: relative;
         padding: 0 .5rem;
-        width: 100%;
+        min-width: 100%;
         /* 398px */
         height: 509px;
     }

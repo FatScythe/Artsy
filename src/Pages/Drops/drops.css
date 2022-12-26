@@ -1,0 +1,258 @@
+.drops h3 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 51.5px;
+    color: #BCB7B7;
+    margin: 1rem 0;
+}
+
+.drops h3 span {
+    color: #000;
+}
+
+.drops .notify {
+    text-align: center;
+    line-height: 64px;
+}
+
+.drops .notify h2 {
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+.drops .notify p {
+    font-weight: 400;
+    font-size: 2rem;
+    color: #616161;
+    margin-top: 1rem;
+}
+
+.drops .notify button {
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 2.25rem;
+    width: 40%;
+    margin: 0 auto;
+    border: 1px solid #000;
+    padding: .7rem;
+    margin-top: 1rem;
+}
+
+.drops .drop {
+    margin: 2rem 0;
+}
+
+.drops .drop .card {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+    height: 441px;
+}
+
+.drops .drop .card .img {
+    flex-basis: 60%;
+    position: relative;
+    max-width: 100%;
+    width: 683px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.drops .drop .card .img img {
+    object-fit: cover;
+}
+
+
+.drops .drop .card .img .overlay {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    border-radius: 5px;
+    background-color: rgba(245, 244, 244, 0.24);
+    backdrop-filter: blur(1px);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: var(--white);
+    padding: 1rem 1rem .8rem;
+}
+
+.drops .drop .card .img .overlay p {
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.drops .drop .card .img .overlay p span:first-child {
+    font-size: 1.5rem;
+    line-height: 49.14px;
+}
+
+.drops .drop .card .img .overlay p span:last-child {
+    font-size: 2rem;
+    line-height: 54.4px;
+}
+
+.drops .drop .card .img .overlay .btn button {
+    background-color: #4693ED;
+    color: var(--white);
+    border-radius: 15px;
+    padding: .5rem 1.3rem;
+}
+
+.drops .drop .card .info {
+    flex-basis: 39%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.drops .drop .card .info .status {
+    font-weight: 500;
+    font-size: 1.2rem;
+    width: fit-content;
+    color: var(--white);
+    padding: .8rem 2rem;
+    border-radius: 15px;
+    text-transform: uppercase;
+}
+
+.drops .drop .card .info .status.blue {
+    background: #4693ED;
+}
+
+.drops .drop .card .info .status.green {
+    background: #3EA03B;
+}
+
+.drops .drop .card .info .status.gray {
+    background: #999EA5;
+}
+
+.drops .drop .card .info .time {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.drops .drop .card .info .title {
+    font-weight: 500;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.drops .drop .card .info .sub-title {
+    font-weight: 400;
+    color: #616161;
+    font-size: 1rem;
+}
+
+.drops .drop .card .info .creator {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.drops .drop .card .info .creator span {
+    color: #006CA2;
+    text-transform: capitalize;
+}
+
+.drops .drop .card .info a {
+    font-weight: 400;
+    font-size: 1rem;
+    text-decoration: underline;
+    color: #006CA2;
+}
+
+@media screen and (max-width: 768px) {
+    .drops .notify h2 {
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .drops .notify p {
+        font-size: 1.2rem;        
+        margin-top: 0;
+        width: 60%;
+        margin: 0 auto;
+        line-height: 28px;
+    }
+
+    .drops .notify button {
+        font-size: 1.5rem;
+        width: 50%;
+        border-radius: 8px;
+        margin-top: 0;
+    }
+
+    .drops .drop .card {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .drops .drop .card .img {
+        flex-basis: 60%;
+    }
+
+    .drops .drop .card .img .status {
+        position: absolute;
+        top: 5%;
+        right: 3%;
+        font-size: .8rem;
+        padding: .6rem 1.3rem;
+    }
+
+    .drops .drop .card .img .overlay {
+        top: 78%;
+        border: 1px solid var(--white);
+        border-radius: 18px;
+    }
+
+    .drops .drop .card .img .overlay p span:first-child {
+        font-size: 1rem;
+        line-height: 28px;
+    }
+
+    .drops .drop .card .img .overlay p span:last-child {
+        font-size: 1.3rem;
+        line-height: 29px;
+    }
+
+    .drops .drop .card .info {
+        flex-basis: 40%;
+    }
+
+    .drops .drop .card .info .time {
+        font-size: .8rem;
+    }
+
+    .drops .drop .card .info .title {
+        font-size: 1.5rem;
+    }
+
+    .drops .drop .card .info .sub-title {
+        font-weight: 400;
+        color: #616161;
+        font-size: 1rem;
+    }
+
+    .drops .drop .card .info .creator {
+        font-weight: 500;
+        font-size: 1.3rem;
+    }
+
+    .drops .drop .card .info .creator span {
+        color: #006CA2;
+    }
+
+    .drops .drop .card .info a {
+        font-weight: 400;
+        font-size: 1rem;
+        text-decoration: underline;
+        color: #006CA2;
+    }
+}
