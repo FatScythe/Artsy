@@ -76,5 +76,9 @@ footer .copyright {
     footer .container .logo {
         font-size: 2.5rem;
     }
+
+    footer {
+        width: fit-content;
+    }
     
 }

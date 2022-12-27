@@ -167,6 +167,10 @@
     color: #006CA2;
 }
 
+.drops .newsletter main {
+    width: 100%;
+}
+
 @media screen and (max-width: 768px) {
     .drops .notify h2 {
         font-weight: 700;

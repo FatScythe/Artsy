@@ -1,6 +1,8 @@
 import "./auction.css";
 import AuctionCard from "./auctionCard";
 import { useEffect } from "react";
+
+// Context
 import { useGlobalArtsyContext } from "../../context/context";
 import { AuctionData } from "./data";
 
@@ -12,17 +14,12 @@ import Bids from "./bids";
 import Loader from "../../Components/Loader/loader";
 
 const Auction = () => {
-  const { footerContainer, size, auction } = useGlobalArtsyContext();
+  const { footerContainer, auction } = useGlobalArtsyContext();
 
   const { isLoading, data, isError } = auction;
 
   useEffect(() => {
-    footerContainer.current.style.display = "block";
-
-    if (size <= 768) {
-      footerContainer.current.style.display = "none";
-      return;
-    }
+    footerContainer.current.style.display = "none";
   });
 
   if (isLoading) {
@@ -42,18 +39,21 @@ const Auction = () => {
 
         <p>Here’s an overview of products actively on auction, explore!</p>
       </div>
-      <div className='card-container'>
-        <div className='overlay-btn d-md-none'>
-          <button>
-            <ChevLeft />
-          </button>
-          <button>
-            <ChevRight />
-          </button>
+
+      <div className='card-content'>
+        <div className='card-container'>
+          <div className='overlay-btn d-md-none'>
+            <button>
+              <ChevLeft />
+            </button>
+            <button>
+              <ChevRight />
+            </button>
+          </div>
+          {AuctionData.map((datum) => {
+            return <AuctionCard {...datum} key={datum.id} />;
+          })}
         </div>
-        {AuctionData.map((datum) => {
-          return <AuctionCard {...datum} key={datum.id} />;
-        })}
       </div>
 
       <div className='dots'>

@@ -43,7 +43,7 @@
         line-height: 31.4px;
     }
 
-    .auction .card-container {
+    .auction .card-content {
         position: relative;
     }
 
@@ -56,7 +56,7 @@
         justify-content: space-between;
         align-items: center;
         width: 96%;
-        z-index: 3;
+        z-index: 1;
     }
 
     .auction .card-container .overlay-btn button {

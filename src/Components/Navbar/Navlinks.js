@@ -6,17 +6,17 @@ export const links = [
   },
   {
     id: 2,
-    link: "/Market",
+    link: "/market",
     name: "Marketplace",
   },
   {
     id: 3,
-    link: "/Auction",
+    link: "/auction",
     name: "Auction",
   },
   {
     id: 4,
-    link: "/Drops",
+    link: "/drops",
     name: "Drop",
   },
 ];

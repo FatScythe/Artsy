@@ -1,0 +1,38 @@
+.checkout nav  {
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #747474;
+}
+
+.checkout .checkout-nav li {
+    position: relative;
+    color: #888;
+    line-height: 32.4px;
+    font-weight: 400;
+    font-size: var(--text-xs);
+}
+
+.checkout .checkout-nav .active li {
+    font-weight: 500;
+    color: #292929;
+}
+
+
+.checkout .checkout-nav li::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    color: black;
+    background-color: var(--black);
+    bottom: -17.5px;
+    border-radius: 4px;
+    left: 0;
+    transition: width .2s ease-in;
+}
+
+.checkout .checkout-nav .active li::after,
+.checkout .checkout-nav li:hover::after {
+    width: 100%;
+}

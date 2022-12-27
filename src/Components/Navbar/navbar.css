@@ -11,6 +11,10 @@ nav .logo {
     text-align: center;
 }
 
+nav.top-nav .active li {
+    border-bottom: 3px solid black;
+}
+
 nav .links {
     cursor: pointer;
 }

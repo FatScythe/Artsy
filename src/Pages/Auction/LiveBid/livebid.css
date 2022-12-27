@@ -1,6 +1,7 @@
 .live-bid {
     height: 100vh;
 }
+
 .live-bid h2 {
     text-transform: capitalize;
     font-size: var(--text-xs);
@@ -271,6 +272,7 @@
   .live-bid main .comment-section .comment .input input {
       border: 1px solid var(--white);
       background: transparent;
+      color: var(--white);
   }
 
   .live-bid main .comment-section .comment .input input::placeholder {
@@ -294,8 +296,4 @@
     border: 0;
     padding: .5rem .8rem;
   }
-
-  
-
-
 }

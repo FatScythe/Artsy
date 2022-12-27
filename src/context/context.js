@@ -1,4 +1,4 @@
-import { useContext, createContext, useRef } from "react";
+import { useContext, createContext, useRef, useState, useEffect } from "react";
 import UseFetch from "../hooks/useFetch";
 const ArtsyContext = createContext();
 
@@ -18,18 +18,18 @@ const ArtsyProvider = ({ children }) => {
 
   // carousel.json
 
-  // const [size, setSize] = useState(window.innerWidth);
-  // function changeSize() {
-  // console.log("size changed");
-  // setSize(window.innerWidth);
-  // }
-  // useEffect(() => {
-  //   window.addEventListener("resize", changeSize);
-  //   return () => {
-  //     // console.log("clean-up Effect");
-  //     window.removeEventListener("resize", changeSize);
-  //   };
-  // }, [size]);
+  const [size, setSize] = useState(window.innerWidth);
+  function changeSize() {
+    // console.log("size changed");
+    setSize(window.innerWidth);
+  }
+  useEffect(() => {
+    window.addEventListener("resize", changeSize);
+    return () => {
+      // console.log("clean-up Effect");
+      window.removeEventListener("resize", changeSize);
+    };
+  }, [size]);
 
   return (
     <ArtsyContext.Provider
@@ -38,6 +38,7 @@ const ArtsyProvider = ({ children }) => {
         products,
         drops,
         auction,
+        size,
       }}
     >
       {children}

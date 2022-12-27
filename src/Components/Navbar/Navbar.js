@@ -14,7 +14,7 @@ import { links } from "./Navlinks";
 const Navbar = () => {
   const [isSiderBarOpen, setIsSideBarOpen] = useState(false);
   return (
-    <nav className='container'>
+    <nav className='container top-nav'>
       <div className='harmburger-btn' onClick={() => setIsSideBarOpen(true)}>
         <Harmburger />
       </div>
@@ -46,10 +46,12 @@ const Navbar = () => {
 
       <div className='nav-btn'>
         <div className='search-btn'>
-          <SearchIcon />
+          <Link to='/market'>
+            <SearchIcon />
+          </Link>
         </div>
         <div className='cart-btn'>
-          <Link to='/Cart'>
+          <Link to='/checkout/cart'>
             <CartIcon />
           </Link>
         </div>

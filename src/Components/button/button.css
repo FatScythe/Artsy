@@ -1,0 +1,10 @@
+button {
+    background-color: #3341C1;
+    color: var(--white);
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    font-weight: 500;
+    font-size: var(--text-sm);
+    line-height: 43.2px;
+    width: 100%;
+}

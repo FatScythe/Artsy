@@ -1,9 +1,22 @@
 import Drop from "./drop";
 import "./drops.css";
+import { useEffect } from "react";
+
+// Context
 import { useGlobalArtsyContext } from "../../context/context";
+import NewsLetter from "../Home/newsletter";
 
 const Drops = () => {
-  const { drops } = useGlobalArtsyContext();
+  const { footerContainer, size, drops } = useGlobalArtsyContext();
+
+  useEffect(() => {
+    footerContainer.current.style.display = "block";
+
+    if (size <= 768) {
+      footerContainer.current.style.display = "none";
+      return;
+    }
+  });
 
   return (
     <section className='drops container'>
@@ -18,6 +31,7 @@ const Drops = () => {
       </div>
 
       <Drop {...drops} />
+      <NewsLetter />
     </section>
   );
 };

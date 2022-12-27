@@ -4,7 +4,6 @@ import Loader from "../../Components/Loader/loader";
 
 const Result = ({ data, isLoading, isError }) => {
   const products = data.products;
-  console.log(products);
 
   if (isLoading) {
     return <Loader />;

@@ -1,4 +1,6 @@
 import { useEffect } from "react";
+
+// Context
 import { useGlobalArtsyContext } from "../../context/context";
 
 // CSS
@@ -9,6 +11,8 @@ import Newsletter from "../Home/newsletter";
 import Result from "./result";
 import SearchDesktop from "./SearchDesktop";
 import SearchMobile from "./SearchMobile";
+
+// Icons
 import { Arrow } from "../../Components/Icons/icons";
 
 const MarketPlace = () => {

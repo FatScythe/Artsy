@@ -11,7 +11,8 @@ import Auction from "./Pages/Auction";
 import Drops from "./Pages/Drops";
 import Product from "./Pages/Market/product-detail/product";
 import LiveBid from "./Pages/Auction/LiveBid/livebid";
-// import Cart from "./Pages/Cart";
+import Checkout from "./Pages/checkout/checkout";
+// import Cart from "./Pages/checkout/cart/cart";
 
 function App() {
   // const [cartIsEmpty, setCartIsEmpty] = useState(true);
@@ -21,15 +22,16 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/Market' element={<Market />} />
-          <Route path='/Auction' element={<Auction />} />
+          <Route path='/market' element={<Market />} />
+          <Route path='/auction' element={<Auction />} />
           <Route path='/live-bid/:id' element={<LiveBid />} />
-          <Route path='/Drops' element={<Drops />} />
+          <Route path='/drops' element={<Drops />} />
           <Route path='/product-detail/:id' element={<Product />} />
           {/* <Route
             path='/Cart'
             element={cartIsEmpty ? <Navigate to='/Market' /> : <Cart />}
           /> */}
+          <Route path='/checkout/*' element={<Checkout />} />
           <Route
             path='*'
             element={
