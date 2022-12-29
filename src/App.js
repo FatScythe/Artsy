@@ -12,6 +12,8 @@ import Drops from "./Pages/Drops";
 import Product from "./Pages/Market/product-detail/product";
 import LiveBid from "./Pages/Auction/LiveBid/livebid";
 import Checkout from "./Pages/checkout/checkout";
+import Schedule from "./Pages/checkout/schedule/schedule";
+import Thanks from "./Pages/checkout/thankyou";
 // import Cart from "./Pages/checkout/cart/cart";
 
 function App() {
@@ -32,6 +34,9 @@ function App() {
             element={cartIsEmpty ? <Navigate to='/Market' /> : <Cart />}
           /> */}
           <Route path='/checkout/*' element={<Checkout />} />
+          <Route path='/checkout/cart/schedule' element={<Schedule />} />
+          <Route path='thanks' element={<Thanks />} />
+
           <Route
             path='*'
             element={

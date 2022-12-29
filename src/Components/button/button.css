@@ -1,4 +1,4 @@
-button {
+button.blue-btn {
     background-color: #3341C1;
     color: var(--white);
     border-radius: 5px;

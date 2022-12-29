@@ -20,20 +20,21 @@ const Checkout = () => {
 
   return (
     <section className='checkout container'>
-      <nav className='checkout-nav'>
+      <nav className='checkout-nav d-none'>
         <NavLink to='/checkout/cart'>
           <li>Shopping cart</li>
         </NavLink>
-        <NavLink to='/checkout/shop'>
+        <NavLink to='/checkout/details'>
           <li>Shopping details</li>
         </NavLink>
         <NavLink to='/checkout/pay'>
           <li>Payment details</li>
         </NavLink>
       </nav>
+
       <Routes>
         <Route path='cart' element={<Cart />} />
-        <Route path='shop' element={<Details />} />
+        <Route path='details' element={<Details />} />
         <Route path='pay' element={<Payment />} />
       </Routes>
     </section>

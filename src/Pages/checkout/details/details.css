@@ -1,0 +1,153 @@
+.details main {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 2rem 0;
+    width: 100%;
+}
+
+.details form,
+.details .cart {
+    flex-basis: 48%;
+}
+
+.details form {
+    color: #888;
+}
+
+.details form label {
+    font-weight: 400;
+    font-size: var(--text-xs);
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.details form div {
+    margin-bottom: 2rem;
+}
+
+.details form input,
+.details form select {
+    outline: none;
+    border: 1px solid #747474;
+    background-color:#F2F2F2;
+    width: 100%;
+    height: 50px;
+    border-radius: 6px;
+    font-size: var(--text-xs);
+    color: #292929;
+    padding: 1rem;
+}
+
+.details form select,
+.details form .postal input {
+    height: 70px;
+}
+
+.details form input::placeholder {
+    font-weight: 400;
+    font-size: var(--text-xs);
+    padding-left: 1rem;
+}
+
+.details form .email .update{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.details form .email .update input {
+    flex-basis: 5%;
+    background-color: #D9D9D9;
+    height: 26px;
+}
+
+.details form .email .update span {
+    flex-basis: 94%;
+}
+
+.details form .location {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.details form .location .country,
+.details form .location .postal {
+    flex-basis: 50%;
+}
+
+.checkout .cart .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    border-top: 1px solid #747474;
+    border-bottom: 1px solid #747474;
+    padding: 1rem 0;
+}
+
+.details .cart .card {
+    height: 260px;
+}
+
+.details .cart .card .info img {
+    width: 166px;
+}
+
+.details .cart .card .info span div input {
+    width: 13%;
+}
+
+.details .cart .total .grand-total {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .details .navigation {
+        margin: 1rem 0;
+        font-weight: 500;
+        color: #BCB7B7;
+        line-height: 51.5px;
+    }
+
+    .details .navigation span {
+        color: #333;
+    }
+
+    .details form .location {
+        flex-direction: column;
+        align-items: stretch;
+        gap: .5rem;
+    }
+
+    .details form .location .country,
+    .details form .location .postal {
+        flex-basis: 100%;
+    }
+
+    .details form,
+    .details .cart {
+        flex-basis: 100%;
+    }
+    .details .links {
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .details .links .blue-btn {
+        width: 80%;
+    }
+
+    .details .links .go-back {
+        color: #006CA2;
+        width: fit-content;
+        margin: 0 auto;
+        border-bottom: 1px solid #006CA2;
+    }
+}

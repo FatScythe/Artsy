@@ -79,8 +79,7 @@ li {
 }
 
 .container {
-  width: clamp(300px, 85%, 1600px);
-  /* width: 85%; */
+  width: clamp(300px, 90%, 1600px);
   margin: 0 auto;
 }
 
@@ -122,13 +121,9 @@ button {
     position: relative;
     height: 100vh;
     width: 100vw;
+    overflow-x: hidden;
   }
-
-  .active li {
-    color: var(--blue);
-    border-bottom: 0;
-  }
-
+    
   .d-none {
     display: none;
   }

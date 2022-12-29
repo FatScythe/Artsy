@@ -1,0 +1,63 @@
+.thanks {
+    display: grid;
+    place-items: center;
+    height: 80vh;
+    background-image: url('../../../images/checkout/bg-pink.png'), url('../../../images/checkout/bg-blue.png');
+    background-repeat: no-repeat;
+    background-position: top 10% left, top 20% left;
+}
+
+.thanks img {
+    height: 350.52px;
+    object-fit: contain;
+}
+
+.thanks h2 {
+    font-weight: 500;
+    font-size: var(--text-lg);
+    line-height: 63.55px;
+}
+    
+.thanks p {
+    font-weight: 400;
+    font-size: var(--text-sm);
+    line-height: 47.66px;
+}
+
+.thanks p span {
+    color: var(--blue);
+}
+
+.thanks p span .cheers svg {
+    margin-left: .8rem;
+    width: 50px;
+    height: 50px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .thanks {
+        display: grid;
+        place-items: center;
+        height: 80vh;
+        background-image: url('../../../images/carousel-images/blue-bg.png'), url('../../../images/carousel-images/pink-bg.png'), url('../../../images/carousel-images/purple-bg.png');
+        background-position: top 10% left -5%, bottom 30% right, top -10% right 50%;
+        background-repeat: no-repeat;
+    }
+
+    .thanks h2 {
+        font-size: var(--text-sm);
+        line-height: 28px;
+    }
+
+    .thanks p {
+        font-size: var(--text-xs);
+        line-height: 25px;
+    }
+
+    .thanks p span {
+        margin-left: 1rem;
+    }
+
+    
+}

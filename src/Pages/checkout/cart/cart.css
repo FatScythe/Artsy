@@ -14,6 +14,7 @@
 .checkout .cart .card .info{
     display: flex;
     justify-content: center;
+    align-items: center;
     text-transform: capitalize;
     color: #292929;
     gap: 1rem;
@@ -49,7 +50,7 @@
     color: #888;
     font-size: var(--text-xs);
     line-height: 27px;
-    border: 1px solid red;
+
 }
 
 .checkout .cart .card .info span div {
@@ -66,6 +67,7 @@
     text-align: center;
     font-weight: 500;
     font-size: var(--text-lg);
+    background-color: transparent;
 }
 
 .checkout .cart .card .price {
@@ -124,28 +126,170 @@
     border-bottom: 1px solid #006CA2;
 }
 
-.checkout .cart .footer .total {
+.cart .total {
     flex-basis: 50%;
     display: flex;
     justify-content: space-between;
     gap: 2rem;
     flex-direction: column;
+    margin-top: 1rem;
 }
 
-.checkout .cart .footer .total div {
+.cart .total div {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.checkout .cart .footer .total .title {
+.cart .total .title {
     font-weight: 400;
     color: #888;
     font-size: var(--text-xs);
 }
 
-.checkout .cart .footer .total .result {
+.cart .total .result {
     font-weight: 400;
     color: #292929;
     font-size: var(--text-xs);
+}
+
+@media screen and (max-width: 768px) {
+    .checkout .cart .cart-nav p {
+        color: #BCB7B7;
+        font-size: var(--text-xs);
+    }
+
+    .checkout .cart .cart-nav p span {
+        color: #292929;
+    }
+
+    .checkout .cart .cart-nav nav {
+        border: 0;
+        width: 80%;
+    }
+
+    .checkout .cart .cart-nav nav ul {
+        background-color: #3A3A3A;
+        padding: .5rem 1.3rem;
+        border-radius: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin: 0 auto;
+    }
+
+    .checkout .cart .cart-nav nav ul li {
+        color: var(--white);
+        padding: .6rem 1.5rem;
+        border-radius: 35px;
+    }
+
+    .checkout .cart .cart-nav nav ul .active li {
+        background-color: white;
+        color: #000;
+        font-weight: 500;
+    }
+
+    .checkout .cart .card {
+        border: 0;
+    }
+
+    .checkout .cart .card .info {
+        gap: .8rem;
+        line-height: 30px;
+    }
+
+    .checkout .cart .card .info img {
+        width: 125px;
+        height: 126px;
+        border-radius: 0;
+    }
+
+    .checkout .cart .card .info .details .type {
+        font-weight: 400;
+        font-style: italic;
+        font-size: var(--text-xs);
+        color: #616161;
+    }
+
+    .checkout .cart .card .info .details h2 {
+        font-weight: 700;
+        font-size: var(--text-sm);
+    }
+
+    .checkout .cart .card .info span div {
+        gap: .5rem;
+        font-size: var(--text-xs);
+        line-height: 27px;
+        border: 1px solid #000;
+        border-radius: 10px;
+        width: 70%;
+    }
+
+    .checkout .cart .card .info span div .decrease,
+    .checkout .cart .card .info span div .increase {
+        padding: 0 .6rem;
+        font-size: var(--text-sm);
+        cursor: pointer;
+    }
+
+    .checkout .cart .card .info span div .value {
+        width: 100%;
+        border-left: 1px solid #000;
+        border-right: 1px solid #000;
+    }
+
+    .checkout .cart .card .price span:first-child {
+        border: 2px solid #888;
+        padding: .3rem .5rem;
+        cursor: pointer;
+    }
+
+    .checkout .cart .card .price span:first-child svg {
+        width: 12px;
+        height: 12px;
+    }
+
+    .checkout .cart .card .price span:last-child {
+        font-weight: 700;
+        line-height: 32.5px;
+    }
+
+    .checkout .cart .footer {
+        align-items: flex-start;
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+
+    .checkout .cart .footer .proceed {
+        flex-basis: 100%;
+        justify-content: center;
+        width: 100%;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .checkout .cart .footer .proceed button {
+        width: 80%;
+    }
+
+    .checkout .cart .footer .total {
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    .checkout .cart .footer .total .title {
+        font-size: var(--text-sm);
+    }
+
+    .checkout .cart .footer .total .grand-total {
+        border-top: 1px dotted #000;
+        padding-top: 1rem;
+    }
+
+    .checkout .cart .footer .total .result {
+        font-weight: 500;
+        font-size: var(--text-sm);
+    }
 }

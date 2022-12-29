@@ -1,0 +1,241 @@
+.payment {
+    margin: 2rem 0;
+}
+
+.payment .h1 {
+    font-weight: 500;
+    font-size: var(--text-sm);
+    line-height: 40px;
+}
+
+.payment .secure-payment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.payment .secure-payment .secure {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 400;
+    line-height: 37.82px;
+    font-size: var(--text-xs);
+    color: #747474;
+}
+
+.payment main {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.payment main .method-container,
+.payment main .summary {
+    flex-basis: 50%;
+}
+
+.payment main .method,
+.payment main .summary {
+    background-color: var(--white);
+    box-shadow: var(--dark-shadow);
+    padding: 1rem .7rem;
+    border-radius: 10px;
+}
+
+.payment main .summary {
+    box-shadow: none;
+}
+
+.payment main .method .select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.payment main .method .select .input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.payment main .method .select .input svg {
+    width: 25px;
+    height: 25px;
+}
+
+.payment main .method .select .input span {
+    margin-left: .5rem;
+}
+
+.payment main .method .select .wallets img {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.payment main .method .title {
+    font-weight: 400;
+    line-height: 37.82px;
+    font-size: var(--text-xs);
+    color: #616161;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.payment main .method label {
+    display: block;
+    font-weight: 400;
+    font-size: var(--text-xs);
+    line-height: 35.1px;
+    color: #888;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.payment main .method input {
+    width: 100%;
+    outline: none;
+    height: 50px;
+    padding: .8rem 1rem;
+    font-size: var(--text-xs);
+    border: 1px solid #747474;
+    background-color: #F2F2F2;
+    border-radius: 6px;
+    caret-color: var(--blue);
+}
+
+.payment main .method .key {
+    position: relative;
+}
+
+.payment main .method .key img {
+    position: absolute;
+    top: 56%;
+    right: 3%;
+    width: 35px;
+    height: 35px; 
+}
+
+.payment main .method .card-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.payment main .method .card-details .cvv,
+.payment main .method .card-details .expiry {
+    flex-basis: 50%;
+}
+
+.payment main .method input::placeholder {
+    color: #888;
+    font-size: var(--text-xs);
+}
+
+.payment main .method .update {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.payment main .method .update input {
+    width: 22px;
+    height: 22px;
+    border-radius: 5px;
+    background-color: #D9D9D9;
+    flex-basis:8%;
+}
+
+.payment main .method .update span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+}
+
+.payment main .method-container .blue-btn {
+    margin: 2rem 0;
+}
+
+.payment main .summary p {
+    padding: 2rem 0;
+    border-bottom: .5px solid #747474;
+}
+
+.payment main .summary .h1 {
+    padding-top: 0;
+}
+
+.payment main .summary .sub-title {
+    font-weight: 400;
+    font-size: var(--text-xs);
+    line-height: 38px;
+    color: #292929;
+}
+
+.payment main .summary .linked {
+    display: block;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 37.82px;
+    color: #616161;
+}
+
+.payment main .summary .cart .grand-total,
+.payment main .summary .cart .result span {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .payment {
+        margin: .8rem 0;
+    }
+    .payment .navigation {
+        font-weight: 500;
+        color: #BCB7B7;
+        line-height: 51.5px;
+        font-size: 1rem;
+    }
+
+    .payment .secure-payment .secure {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 25.22px;
+    }
+
+    .payment .secure-payment .secure svg {
+        width: 15px;
+        height: 19px;
+        margin: 1rem 0;
+    }
+
+    .payment .navigation span {
+        color: #333;
+    }
+    
+    .payment main .method-container {
+        flex-basis: 100%;
+    }
+
+    .payment main .method-container .method {
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .payment main a {
+        text-align: center;
+        display: block;
+    }
+
+    .payment main .method-container .blue-btn {
+        margin: 1rem 0;
+        width: 70%;
+    }
+}

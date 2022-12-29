@@ -1,4 +1,4 @@
-.checkout nav  {
+.checkout nav  {  
     width: 60%;
     margin: 0 auto;
     padding-bottom: 1rem;
@@ -35,4 +35,8 @@
 .checkout .checkout-nav .active li::after,
 .checkout .checkout-nav li:hover::after {
     width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    
 }

@@ -1,0 +1,48 @@
+.schedule {
+    /* margin: 2rem 0; */
+}
+@media screen and (max-width: 768px) {
+    .schedule .cart-nav {
+        margin: 1rem 0;
+    }
+
+    .schedule .cart-nav p {
+        color: #BCB7B7;
+        font-size: var(--text-xs);
+    }
+
+    .schedule .cart-nav p span {
+        color: #292929;
+    }
+
+    .schedule .cart-nav nav {
+        border: 0;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .schedule .cart-nav nav ul {
+        width: 80%;
+        background-color: #3A3A3A;
+        padding: .5rem 1.3rem;
+        border-radius: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin: 0 auto;
+    }
+
+    .schedule .cart-nav nav ul li {
+        color: var(--white);
+        padding: .6rem 1.5rem;
+        border-radius: 35px;
+    }
+
+    .schedule .cart-nav nav ul .schedule-nav li {
+        background-color: white;
+        color: #000;
+        font-weight: 500;
+    }
+
+}

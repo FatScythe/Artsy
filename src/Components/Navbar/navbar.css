@@ -120,6 +120,11 @@ nav .harmburger-btn {
         flex: 0;
     }
 
+    nav.top-nav .active li {
+        color: var(--blue);
+        border-bottom: 0;
+    }
+
     nav .links li {
         display: block;
         padding: 1.5rem 0;
