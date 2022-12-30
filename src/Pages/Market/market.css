@@ -28,7 +28,7 @@
 .marketplace button.d-none {
     margin: 4rem 0;
     font-weight: 500;
-    font-size: 1.875rem;
+    font-size: var(--text-md);
     line-height: 40.5px;
     padding: 1rem 2rem;
     background-color: transparent;
@@ -56,7 +56,7 @@
 
     .marketplace button.d-md-none span:first-child {
         font-weight: 400;
-        font-size: 1.25rem;
+        font-size: var(--text-sm);
         line-height: 31.52px;
     }
 

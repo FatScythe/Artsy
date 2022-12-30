@@ -7,7 +7,6 @@ nav {
 
 nav .logo {
     font-weight: 700;
-    /* font-size: 2rem; */
     font-size: var(--text-md);
     text-align: center;
     cursor: pointer;
@@ -25,14 +24,13 @@ nav .links li {
     display: inline;
     position: relative;
     margin-left: 2.5rem;
-    /* font-size: 20px; */
     font-size: var(--text-xs);   
 }
 
 nav .links li::after {
     position: absolute;
     content: "";
-    height: 3px;
+    height: 2px;
     width: 0;
     color: black;
     background-color: var(--black);
@@ -78,7 +76,6 @@ nav .nav-btn .cart-btn svg {
     nav .logo {
         flex: 2;
         font-weight: 700;
-        /* font-size: 1.7rem; */
         font-size: var(--text-lg);
     }
 

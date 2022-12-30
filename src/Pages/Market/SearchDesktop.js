@@ -42,7 +42,7 @@ const SearchDesktop = () => {
             return (
               <div className='category' key={index}>
                 <label className='sub'>
-                  {category}
+                  <span className='sub-text'>{category}</span>
                   <input type='checkbox' className='checkbox-input' />
                   <span className='checkmark'></span>
                 </label>

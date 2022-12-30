@@ -5,13 +5,13 @@
     background-color: var(--white);
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    padding: 1rem .8rem;
+    padding: .8rem;
 }
 
 .results .sort p,
 .results .sort label {
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: var(--text-xs);
     line-height: 37.82px;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .results .sort option {
-    font-size: 1.5rem;
+    font-size: var(--text-xs);
 }
 
 .results .products {
@@ -62,20 +62,19 @@
 
 .results .products .product-card h3 {
     font-weight: 400;
-    font-size: 1.375rem;
+    font-size: var(--text-xs);
     line-height: 34.67px;
     color: #333333;
 }
 
 .results .products .product-card p {
     font-weight: 700;
-    font-size: 1.75rem;
+    font-size: var(--text-sm);
     line-height: 44.13px;
     color: #333333;
 }
 
 @media screen and (max-width: 768px){
-
     .results .sort {
         display: none;
     }
@@ -89,7 +88,7 @@
     }
 
     .results .products .product-card img {
-        height: 384px;
+        height: 324px;
         width: 100%;
         border-radius: 0;
     }
@@ -103,7 +102,7 @@
     .results .products .product-card h3,
     .results .products .product-card p {
         font-weight: 500;
-        font-size: 1rem;
+        font-size: var(--text-xs);
         line-height: 25.22px;
     }
 

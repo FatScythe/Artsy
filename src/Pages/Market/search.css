@@ -9,17 +9,17 @@
 
 .search-bar svg {
     position: absolute;
-    height: 30px;
-    width: 30px;
-    top: 25%;
-    left: 5%;
+    height: 25px;
+    width: 25px;
+    top: 27%;
+    left: 7%;
 }
 
 .search-bar .search-input {
     width: 90%;
     height: 3.75rem;
     padding: 0rem 3.5rem;
-    font-size: 1.5rem;
+    font-size: var(--text-xs);
     border: 0;
     outline: 0;
     background-color: #F4F2F2;
@@ -29,7 +29,7 @@
 } 
 
 .search-bar .search-input::placeholder {
-    font-size: 1.3rem;
+    font-size: var(--text-xs);
 }
 
 .search .filters h3.filter-title {
@@ -41,14 +41,20 @@
     margin-bottom: .5rem;
 }
 
+.search .filters h3.filter-title span svg {
+    width: 25px;
+    height: 25px;
+}
+
 .search .filters h3 .title {
     font-weight: 500;
     font-size: 2rem;
+    font-size: var(--text-sm);
     line-height: 50.43px;
 }
 
 .search .filters hr {
-    height: 6px;
+    height: 4px;
     background: #AFB091;
     border-radius: 10px;
 }
@@ -57,12 +63,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 3rem 0;
+    margin: 1.5rem 0;
 }
 
 .search .filters h3 .sub-title {
     font-weight: 500;
-    font-size: 1.75rem;
+    font-size: var(--text-xs);
     line-height: 157.6%;
 }
 
@@ -75,17 +81,22 @@
 }
 
 .search .filters .categories .category .sub {
-    display: block;
+    display: flex;
+    align-items: center;
     position: relative;
     padding-left: 35px;
     margin-bottom: 12px;
     cursor: pointer;
-    font-size: 22px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
 }
+
+.search .filters .categories .category .sub .sub-text {
+    font-size: var(--text-xs);
+}
+
 
 /* Hide the browser's default checkbox */
 .search .filters .categories .category .sub input {
@@ -101,8 +112,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
     background-color: #eee;
 }
 
@@ -130,12 +141,12 @@
 
 /* Style the checkmark/indicator */
 .search .filters .categories .category .sub .checkmark:after {
-    left: 9px;
-    top: 1px;
-    width: 10px;
-    height: 15px;
+    left: 6px;
+    top: 3px;
+    width: 6px;
+    height: 10px;
     border: solid black;
-    border-width: 0 3px 3px 0;
+    border-width: 0 2px 2px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -144,7 +155,7 @@
 .search .filters .categories .category .sub,
 .search .filters .prices .price p,
 .search .filters .artists .price-range p {
-    font-size: 1.5rem;
+    font-size: var(--text-xs);
     font-weight: 400;
     line-height: 32px;
     color: #292929;
@@ -266,7 +277,7 @@ input[type=range]:focus {
 }
 
 .search .filters .artists .price-range p {
-    margin-bottom: 1rem;
+    margin-bottom: .6rem;
 }
 
 .search .filters .artists .price-range p:first-child {
@@ -275,8 +286,8 @@ input[type=range]:focus {
 
 @media screen and (max-width: 768px ) {
     .marketplace .newsletter {
-            margin: .5rem 0;
-            display: block;
+        margin: 0;
+        display: block;
     }
 
     .marketplace .newsletter main.container {

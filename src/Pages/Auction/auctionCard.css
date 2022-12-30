@@ -4,8 +4,8 @@
 }
 
 .auction .auction-card img {
-    width: 485px;
-    height: 396px;
+    width: 400px;
+    height: 300px;
     object-fit: cover;
 }
 
@@ -14,7 +14,7 @@
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 70%;
     text-align: center;
     border-radius: 5px;
     background-color: rgba(245, 244, 244, 0.24);
@@ -22,6 +22,7 @@
     font-weight: 500;
     color: var(--white);
     font-size: 2.5rem;
+    font-size: var(--text-sm);
     line-height: 64px;
 }
 
@@ -41,7 +42,6 @@
 }
 
 .explore-container .explore-card img {
-    height: 421px;
     object-fit: cover;
 }
 
@@ -62,13 +62,13 @@
 
 @media screen and (max-width: 768px) {
     .auction .auction-card img {
-        width: 228px;
-        height: 186px;
+        width: 200px;
+        height: 180px;
     }
 
     .auction .auction-card .overlay {
         font-weight: 400;
-        font-size: 1.25rem;
+        font-size: var(--text-sm);
         line-height: 25px;
     }
 }

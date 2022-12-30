@@ -36,7 +36,7 @@
     justify-content: space-between;
     align-items: center;
     font-weight: 500;
-    font-size: 2rem;
+    font-size: var(--text-sm);
     line-height: 31.23px;
     text-transform: capitalize;
 }
@@ -56,26 +56,25 @@
 .explore .btn button {
     font-weight: 500;
     position: relative;
-    font-size: 2.25rem;
-    /* color: white; */
+    font-size: var(--text-xs);
     line-height: 35.14px;
     background: linear-gradient(to right,#78A3Ad,#C05609);
-    padding: 20px 60px;
+    padding: 15px 45px;
     border-radius: 5px;
     z-index: 1;
 }
 
 .explore .btn button::before {
-        content: "";
-        position: absolute;
-        top: 1px;
-        right: 1px;
-        bottom: 1px;
-        left: 1px;
-        background-color: var(--white);
-        border-radius: 4px;
-        z-index: -1;
-        transition: 200ms
+    content: "";
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    left: 1px;
+    background-color: var(--white);
+    border-radius: 4px;
+    z-index: -1;
+    transition: 200ms;
 }
 
 .explore .btn button::after {

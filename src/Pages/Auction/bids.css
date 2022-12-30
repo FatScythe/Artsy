@@ -3,7 +3,7 @@
 }
 .bids h2 {
     font-weight: 700;
-    font-size: 2.25rem;
+    font-size: var(--text-md);
     line-height: 64px;
 }
 
@@ -48,7 +48,7 @@
 .bids .bid-card-container .bid-card header h3 {
     text-transform: capitalize;
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: var(--text-md);
     margin-left: 2rem;
     line-height: 64px;
 }
@@ -63,7 +63,7 @@
 
 .bids .bid-card-container .bid-card footer h4 span:first-child {
     font-weight: 500;
-    font-size: 2rem;
+    font-size: var(--text-sm);
     line-height: 64px;
     color: #616161;
 }
@@ -79,7 +79,7 @@
 
 .bids .bid-card-container .bid-card footer h4 span:last-child {
     font-weight: 700;
-    font-size: 1.875rem;
+    font-size: var(--text-xs);
     line-height: 64px;
 }
 
@@ -98,7 +98,7 @@
     align-items: flex-start;
     flex-direction: column;
     font-weight: 700;
-    font-size: 1.875rem;
+    font-size: var(--text-xs);
     line-height: 64px;
     color: #616161;
 }
@@ -109,10 +109,10 @@
 
 .bids .bid-card-container .bid-card footer .bottom button {
     background-color: #3341C1;
-    padding: 1.3rem 2rem;
+    padding: 1rem 1.5rem;
     color: var(--white);
     font-weight: 500;
-    font-size: 1.61125rem;
+    font-size: var(--text-xs);
 }
 
 @media screen and (max-width: 768px) {
@@ -122,7 +122,7 @@
 
     .bids h2 {
         font-weight: 500;
-        font-size: 1.25rem;
+        font-size: var(--text-md);
         line-height: 27px;
     }
 
@@ -162,7 +162,7 @@
         justify-content: space-between;
         align-items: center;
         font-weight: 700;
-        font-size: 1.25rem;
+        font-size: var(--text-sm);
         margin-left: 0;
         line-height: 27px;
         margin-bottom: 1rem;
@@ -177,7 +177,7 @@
     }
 
     .bids .bid-card-container .bid-card footer h4 span:first-child {
-        font-size: 1.2rem;
+        font-size: var(--text-sm);
         line-height: 27px;
     }
 
@@ -186,13 +186,13 @@
     }
 
     .bids .bid-card-container .bid-card footer h4 span:last-child {
-        font-size: 1.2rem;
+        font-size: var(--text-sm);
         line-height: 27px;
     }
 
     .bids .bid-card-container .bid-card footer .bottom div:first-child {
         gap: 2rem;
-        font-size: 1.2rem;
+        font-size: var(--text-sm);
         line-height: 27px;
     }
 
@@ -205,7 +205,7 @@
         padding: .8rem 1.5rem;
         color: var(--white);
         font-weight: 500;
-        font-size: 1rem;
+        font-size: var(--text-xs);
     }
     
 }
