@@ -8,22 +8,28 @@ import {
   SearchIcon,
 } from "../Icons/icons";
 import { useState } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useNavigate } from "react-router-dom";
 import { links } from "./Navlinks";
 
 const Navbar = () => {
   const [isSiderBarOpen, setIsSideBarOpen] = useState(false);
+  const navigate = useNavigate();
+
   return (
     <nav className='container top-nav'>
       <div className='harmburger-btn' onClick={() => setIsSideBarOpen(true)}>
         <Harmburger />
       </div>
 
-      <div className='logo stix'>ARTSY.</div>
+      <div className='logo stix ' onClick={() => navigate("/")}>
+        ARTSY.
+      </div>
 
       <ul className={`${isSiderBarOpen ? "open" : ""} links`}>
         <div className='side-bar container'>
-          <div className='logo stix'>ARTSY.</div>
+          <div className='logo stix' onClick={() => navigate("/")}>
+            ARTSY.
+          </div>
 
           <div className='close-btn' onClick={() => setIsSideBarOpen(false)}>
             <CloseIcon />

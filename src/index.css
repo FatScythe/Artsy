@@ -79,7 +79,7 @@ li {
 }
 
 .container {
-  width: clamp(300px, 90%, 1600px);
+  width: clamp(300px, 85%, 1600px);
   margin: 0 auto;
 }
 

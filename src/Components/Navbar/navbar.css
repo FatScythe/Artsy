@@ -2,13 +2,15 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 
 nav .logo {
     font-weight: 700;
-    font-size: 2rem;
+    /* font-size: 2rem; */
+    font-size: var(--text-md);
     text-align: center;
+    cursor: pointer;
 }
 
 nav.top-nav .active li {
@@ -23,8 +25,8 @@ nav .links li {
     display: inline;
     position: relative;
     margin-left: 2.5rem;
-    font-size: 20px;
-    
+    /* font-size: 20px; */
+    font-size: var(--text-xs);   
 }
 
 nav .links li::after {
@@ -66,16 +68,24 @@ nav .harmburger-btn {
     cursor: pointer;
 }
 
+nav .nav-btn .search-btn svg,
+nav .nav-btn .cart-btn svg {
+    width: 25px;
+    height: 25px;
+}
+
 @media screen and (max-width: 768px) {
     nav .logo {
         flex: 2;
         font-weight: 700;
-        font-size: 1.7rem;
+        /* font-size: 1.7rem; */
+        font-size: var(--text-lg);
     }
 
     nav .links .side-bar .logo {
         font-weight: 700;
         font-size: 1.7rem;
+        font-size: var(--text-lg);
         flex: 1;
         text-align: left;
     }

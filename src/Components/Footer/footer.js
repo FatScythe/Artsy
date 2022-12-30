@@ -1,16 +1,19 @@
 import "./footer.css";
 import { links } from "../Navbar/Navlinks";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { LocationIcon, MailIcon } from "../Icons/icons";
 import { useGlobalArtsyContext } from "../../context/context";
 
 const Footer = () => {
   const { footerContainer } = useGlobalArtsyContext();
+  const navigate = useNavigate();
   return (
     <footer ref={footerContainer}>
       <h2 className='d-md-none'>REACH US</h2>
       <div className='container'>
-        <div className='logo clash d-none'>ARTSY.</div>
+        <div className='logo clash d-none' onClick={() => navigate("/")}>
+          ARTSY.
+        </div>
         <div className='links d-none'>
           {links.map((to) => {
             const { id, link, name } = to;

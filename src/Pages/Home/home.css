@@ -1,5 +1,5 @@
 #home {
-    margin-top: 2rem;
+    margin-top: 1rem;
     overflow-x: hidden;
 }
 
@@ -9,20 +9,20 @@
 
 #home .hero h1 {
     font-weight: 600;
-    font-size: 5rem;
-    max-width: 1068px;
+    font-size: var(--text-3xl);
+    max-width: 1900px;
     margin: 0 auto;
-    width:90%;
+    width: 90%;
 }
 
  #home .hero p {
     margin-top: 1rem;
-    font-size: 1.7rem;
+    font-size: var(--text-xs);
     font-weight: 500;
-    margin: 2rem auto;
+    margin: 1rem auto;
     line-height: 1.5;
     max-width: 1068px;
-    width: 90%;
+    width: 55%;
  }
 
  /* ===== Carousel ===== */
@@ -97,13 +97,17 @@
  } */
 
 @media screen and (max-width: 768px) {
+    #home .hero {
+        margin: 2rem 0;
+    }
     #home .hero h1 {
         font-weight: 500;
-        font-size: 2rem;
+        font-size: var(--text-lg);
     }
 
     #home .hero p {
-        font-size: 1rem;
+        font-size: var(--text-xs);
+        width: 85%;
     }
 
     /* ===== Gallery ===== */
@@ -112,7 +116,7 @@
     }
 
     #home .hero .gallery {
-        margin-top: 2rem;
+        margin-top: 1rem;
         background-image: url('../../images/carousel-images/blue-bg.png'), url('../../images/carousel-images/pink-bg.png'), url('../../images/carousel-images/pink-bg.png');
         background-repeat: no-repeat;
         background-position: top 10% right, bottom 10% right, bottom 20% left;

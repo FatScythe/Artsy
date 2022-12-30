@@ -15,7 +15,12 @@
 .links .link h2 {
     font-weight: 500;
     line-height: 4.05rem;
-    font-size: 3rem;
+    font-size: var(--text-lg);
+}
+
+.links .link svg {
+    width: 60px;
+    height: 60px;
 }
 
 @media screen and (max-width: 768px) {
@@ -29,7 +34,7 @@
 
     .links .link h2 {
         line-height: 2.025rem;
-        font-size: 1.5rem;
+        font-size: var(--text-md);
     }
 
     .links .link .arrow {
@@ -38,5 +43,8 @@
         border-radius: 50%;
     }
 
-
+    .links .link svg {
+        width: 30px;
+        height: 20px;
+    }
 }

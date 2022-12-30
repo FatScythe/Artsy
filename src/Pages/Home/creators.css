@@ -2,7 +2,7 @@ section.creators {
     background-color: #E2E2E2;
     height: 100%;
     position: relative;
-    margin: 6rem 0;
+    margin: 4rem 0;
     padding: 2rem 0;
     z-index: 4;
 }
@@ -29,9 +29,9 @@ section.creators .title {
 }
 
 section.creators .title h2 {
-    width: 60%;
+    width: 65%;
     font-weight: 600;
-    font-size: 3.44rem;
+    font-size: var(--text-xl);
     line-height: 5.53rem;
     align-self: flex-start;
 }
@@ -46,7 +46,7 @@ section.creators .title ul .list {
 
 section.creators .title ul li {
     font-weight: 400;
-    font-size: 2.5rem;
+    font-size: var(--text-lg);
     line-height: 62.2px;
     color: #333333;
     margin-bottom: .6rem;
@@ -56,7 +56,7 @@ section.creators p {
     color: rgba(0,0,0, 0.57);
     font-weight: 200;
     line-height: 41.6px;
-    font-size: 2rem;
+    font-size: var(--text-md);
     margin-top: 1rem;
 }
 
@@ -90,7 +90,7 @@ section.creators .year {
 
     section.creators .title h2 {
         width: 80%;
-        font-size: 1.5rem;
+        font-size: var(--text-sm);
         line-height: 37.32px;
     }
     
@@ -133,11 +133,11 @@ section.creators .year {
     section.creators .location {
         text-align: right;
         line-height: 49.76px;
-        font-size: 2rem;
+        font-size: var(--text-lg);
     }
 
     section.creators .year {
-        font-size: 4rem;
+        font-size: var(--text-2xl);
         line-height: 99.52px;
     }
 }
