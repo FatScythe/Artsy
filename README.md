@@ -1,5 +1,5 @@
 ## Artsy
-#### Link to the live website: [Artsy](https://artsy-xi.vercel.app/ "Artsy live site")
+#### Link to the live website: [Artsy](https://artsy-lemon.vercel.app/ "Artsy live site")
 ___
 
 ### Description 
