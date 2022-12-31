@@ -1,4 +1,4 @@
-import { Routes, BrowserRouter, Route } from "react-router-dom";
+import { Routes, BrowserRouter, Route, Link } from "react-router-dom";
 // components
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/footer";
@@ -40,8 +40,9 @@ function App() {
           <Route
             path='*'
             element={
-              <div>
-                <h1>Not Found :( </h1>
+              <div className='not-found'>
+                <h1>Error: Page Not Found :( </h1>
+                <Link to='/'>Return to HomePage</Link>
               </div>
             }
           />

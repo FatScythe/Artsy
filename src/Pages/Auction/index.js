@@ -11,24 +11,27 @@ import { ChevLeft, ChevRight, Dots, Arrow } from "../../Components/Icons/icons";
 
 //component
 import Bids from "./bids";
-import Loader from "../../Components/Loader/loader";
+// import Loader from "../../Components/Loader/loader";
+
+// Data because Api is not good
+import { bids } from "./bidsData";
 
 const Auction = () => {
-  const { footerContainer, auction } = useGlobalArtsyContext();
+  const { footerContainer } = useGlobalArtsyContext();
 
-  const { isLoading, data, isError } = auction;
+  // const { isLoading, data, isError } = auction;
 
   useEffect(() => {
     footerContainer.current.style.display = "none";
   });
 
-  if (isLoading) {
-    return <Loader />;
-  }
+  // if (isLoading) {
+  //   return <Loader />;
+  // }
 
-  if (isError) {
-    return <h2>Error...</h2>;
-  }
+  // if (isError) {
+  //   return <h2>Error...</h2>;
+  // }
 
   return (
     <section className='auction container'>
@@ -62,7 +65,7 @@ const Auction = () => {
         </div>
       </div>
 
-      <Bids bids={data.bids} />
+      <Bids bids={bids} />
 
       <div className='btn d-md-none'>
         <button>

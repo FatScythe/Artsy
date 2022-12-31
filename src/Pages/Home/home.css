@@ -76,16 +76,16 @@
  }
 
  .next-slide {
-    border: 10px solid red;
-    z-index: 10;
+    /* border: 10px solid red; */
+    z-index: -10;
     position: absolute;
     top: 0;
     right: -300px;
  }
 
  .prev-slide {
-     border: 10px solid red;
-     z-index: 10;
+     /* border: 10px solid red; */
+     z-index: -10;
      position: absolute;
      top: 0;
      right: 250px;

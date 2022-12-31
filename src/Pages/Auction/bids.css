@@ -54,11 +54,12 @@
 }
 
 .bids .bid-card-container .bid-card footer {
-    margin: 2rem 0;
+    margin: .5rem 0;
 }
 
 .bids .bid-card-container .bid-card footer h4 {
-    margin-top: 1rem;
+    margin-top: 0rem;
+    
 }
 
 .bids .bid-card-container .bid-card footer h4 span:first-child {
@@ -88,7 +89,7 @@
     align-items: center;
     justify-content: space-between;
     background-color: #F7F4F4;
-    margin-top: 1rem;
+    margin-top: .5rem;
     padding: 0 .5rem;
 }
 
@@ -117,7 +118,7 @@
 
 @media screen and (max-width: 768px) {
     .bids {
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
     }
 
     .bids h2 {

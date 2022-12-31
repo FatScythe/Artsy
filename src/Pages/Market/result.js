@@ -1,6 +1,10 @@
-import "./result.css";
 import { Link } from "react-router-dom";
+// CSS
+import "./result.css";
+
+//Component
 import Loader from "../../Components/Loader/loader";
+import Error from "../../Components/Error/error";
 
 const Result = ({ data, isLoading, isError }) => {
   const products = data.products;
@@ -10,7 +14,7 @@ const Result = ({ data, isLoading, isError }) => {
   }
 
   if (isError) {
-    return <h3>Error</h3>;
+    return <Error />;
   }
 
   return (

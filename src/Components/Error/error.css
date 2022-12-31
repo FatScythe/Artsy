@@ -1,0 +1,32 @@
+.error {
+    display: grid;
+    place-items: center;
+    gap: 1rem;
+}
+
+.error h2 {
+    color: crimson;
+    font-size: 2rem;
+}
+
+.error button {
+    background-color: var(--blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+    padding: .5rem 1rem;
+    color: var(--white);
+    border-radius: 5px;
+    transition: .5s all;
+}
+
+.error button:hover {
+    box-shadow: var(--dark-shadow);
+    background-color: green;
+}
+
+.error button svg {
+    width: 30px;
+    height: 30px;
+}

@@ -1,6 +1,6 @@
 .drops h3 {
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: var(--text-xs);
     line-height: 51.5px;
     color: #BCB7B7;
     margin: 1rem 0;
@@ -17,12 +17,12 @@
 
 .drops .notify h2 {
     font-weight: 500;
-    font-size: 3rem;
+    font-size: var(--text-lg);
 }
 
 .drops .notify p {
     font-weight: 400;
-    font-size: 2rem;
+    font-size: var(--text-sm);
     color: #616161;
     margin-top: 1rem;
 }
@@ -30,8 +30,8 @@
 .drops .notify button {
     background-color: transparent;
     font-weight: 500;
-    font-size: 2.25rem;
-    width: 40%;
+    font-size: var(--text-sm);
+    width: 30%;
     margin: 0 auto;
     border: 1px solid #000;
     padding: .7rem;
@@ -47,7 +47,7 @@
     justify-content: space-between;
     gap: 1.5rem;
     margin-bottom: 2.5rem;
-    height: 441px;
+    height: 350px;
 }
 
 .drops .drop .card .img {
@@ -88,12 +88,12 @@
 }
 
 .drops .drop .card .img .overlay p span:first-child {
-    font-size: 1.5rem;
+    font-size: var(--text-xs);
     line-height: 49.14px;
 }
 
 .drops .drop .card .img .overlay p span:last-child {
-    font-size: 2rem;
+    font-size: var(--text-sm);
     line-height: 54.4px;
 }
 
@@ -111,25 +111,25 @@
     justify-content: space-between;
 }
 
-.drops .drop .card .info .status {
+.drops .drop .card .status {
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: var(--text-xs);
     width: fit-content;
     color: var(--white);
-    padding: .8rem 2rem;
+    padding: .8rem 1.2rem;
     border-radius: 15px;
     text-transform: uppercase;
 }
 
-.drops .drop .card .info .status.blue {
+.drops .drop .card .status.blue {
     background: #4693ED;
 }
 
-.drops .drop .card .info .status.green {
+.drops .drop .card .status.green {
     background: #3EA03B;
 }
 
-.drops .drop .card .info .status.gray {
+.drops .drop .card .status.gray {
     background: #999EA5;
 }
 
@@ -152,7 +152,7 @@
 
 .drops .drop .card .info .creator {
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: var(--text-xs);
 }
 
 .drops .drop .card .info .creator span {
@@ -174,28 +174,29 @@
 @media screen and (max-width: 768px) {
     .drops .notify h2 {
         font-weight: 700;
-        font-size: 1.5rem;
+        font-size: var(--text-md);
         margin-top: 2rem;
     }
 
-    .drops .notify p {
-        font-size: 1.2rem;        
+    .drops .notify p {       
+        font-size: var(--text-xs);
         margin-top: 0;
-        width: 60%;
+        width: 90%;
         margin: 0 auto;
         line-height: 28px;
     }
 
     .drops .notify button {
-        font-size: 1.5rem;
-        width: 50%;
-        border-radius: 8px;
+        font-size: var(--text-sm);
+        width: 40%;
+        border-radius: 6px;
         margin-top: 0;
     }
 
     .drops .drop .card {
         flex-direction: column;
         gap: 1rem;
+        height: 441px;
     }
 
     .drops .drop .card .img {
@@ -211,7 +212,7 @@
     }
 
     .drops .drop .card .img .overlay {
-        top: 78%;
+        top: 73%;
         border: 1px solid var(--white);
         border-radius: 18px;
     }
@@ -222,12 +223,13 @@
     }
 
     .drops .drop .card .img .overlay p span:last-child {
-        font-size: 1.3rem;
+        font-size: var(--text-xs);
         line-height: 29px;
     }
 
     .drops .drop .card .info {
         flex-basis: 40%;
+        gap: .5rem;
     }
 
     .drops .drop .card .info .time {
@@ -235,18 +237,18 @@
     }
 
     .drops .drop .card .info .title {
-        font-size: 1.5rem;
+        font-size: var(--text-xs);
     }
 
     .drops .drop .card .info .sub-title {
         font-weight: 400;
         color: #616161;
-        font-size: 1rem;
+        font-size: var(--text-xs);
     }
 
     .drops .drop .card .info .creator {
         font-weight: 500;
-        font-size: 1.3rem;
+        font-size: var(--text-xs);
     }
 
     .drops .drop .card .info .creator span {
@@ -255,7 +257,7 @@
 
     .drops .drop .card .info a {
         font-weight: 400;
-        font-size: 1rem;
+        font-size: var(--text-xs);
         text-decoration: underline;
         color: #006CA2;
     }

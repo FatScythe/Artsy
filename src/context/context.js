@@ -31,6 +31,20 @@ const ArtsyProvider = ({ children }) => {
     };
   }, [size]);
 
+  const currentNumber = (array, index) => {
+    const lastNumber = array.length() - 1;
+
+    if (index > lastNumber) {
+      return 0;
+    }
+
+    if (index < 0) {
+      return lastNumber;
+    }
+
+    return index;
+  };
+
   return (
     <ArtsyContext.Provider
       value={{
@@ -39,6 +53,7 @@ const ArtsyProvider = ({ children }) => {
         drops,
         auction,
         size,
+        currentNumber,
       }}
     >
       {children}

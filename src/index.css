@@ -107,6 +107,33 @@ button {
   border: 0;
 }
 
+.not-found {
+  display: grid;
+  place-items: center;
+  height: 40vh;
+}
+
+.not-found h1 {
+  color: crimson;
+}
+
+.not-found a {
+  background-color: var(--blue);
+  padding: 1rem;
+  color: var(--white);
+  font-weight: 700;
+  border-radius: 6px;
+}
+
+.not-found a:hover {
+  box-shadow: var(--dark-shadow);
+  background-color: green;
+}
+
+.not-found + * {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .d-md-none {
     display: none;
