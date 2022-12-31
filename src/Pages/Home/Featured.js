@@ -1,22 +1,24 @@
+// CSS
 import "./featured.css";
-import { Arrow } from "../../Components/Icons/icons";
-// import cleoptara from "../../images/featured/f1.png";
-// import hieroglyphs from "../../images/featured/f2.png";
-// import pharaoh from "../../images/featured/f3.png";
+
+// images
 import r1 from "../../images/featured/random1.png";
 import r2 from "../../images/featured/random2.png";
 import r3 from "../../images/featured/random3.png";
 import r4 from "../../images/featured/random4.png";
 import r5 from "../../images/featured/random5.png";
 
+// components
 import Loader from "../../Components/Loader/loader";
+import Error from "../../Components/Error/error";
+import { Arrow } from "../../Components/Icons/icons";
 const Featured = ({ isLoading, data, isError }) => {
   if (isLoading) {
     return <Loader />;
   }
 
   if (isError) {
-    return <h2>Error...</h2>;
+    return <Error />;
   }
 
   const featured = data.featured_products;

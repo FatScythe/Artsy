@@ -29,45 +29,46 @@
 
  #home .carousel {
     display: grid;
-    gap: .5rem;
-    grid-template-columns: repeat(4, minmax(300px, 1fr));
+    gap: 1rem;
+    grid-template-columns: repeat(5, minmax(280px, 1fr));
     grid-template-rows: repeat(6, minmax(100px, 1fr));
+    background-color: var(--white);
  }
 
   #home .carousel div {
     position: relative;
-    /* z-index: -1; */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
   }
 
  #home .carousel div img {
+    width: 100%;
     object-fit: contain;
     transition: all ease-in-out 1s;
  }
 
  #home .carousel div:nth-child(1) {
-    /* background-color: aqua; */
     grid-row: 3/5;
-    /* border: 1px solid red; */
  }
 
  #home .carousel div:nth-child(2) {
-    /* background-color: purple; */
     grid-row: 2/6;
-    /* border: 1px solid red; */
  }
 
  #home .carousel div:nth-child(3) {
-     /* background-color: yellow; */
-     grid-row: 1/5;
+    position: relative;
+    grid-row: 1/5;
  }
 
  #home .carousel div:nth-child(4) {
-     /* background-color: green; */
     grid-row: 2/6;
  }
+
+#home .carousel div:nth-child(5) {
+    grid-row: 2/5;
+}
 
  .active-slide {
     position: absolute;
@@ -76,25 +77,19 @@
  }
 
  .next-slide {
-    /* border: 10px solid red; */
-    z-index: -10;
+    /* z-index: -1; */
     position: absolute;
     top: 0;
-    right: -300px;
+    right: -100%;
+    grid-row: inherit;
  }
 
  .prev-slide {
-     /* border: 10px solid red; */
-     z-index: -10;
+     z-index: -1;
      position: absolute;
      top: 0;
      right: 250px;
  }
-
- /* #home .carousel div:nth-child(5) {
-     background-color: violet;
-     grid-row: 3/5;
- } */
 
 @media screen and (max-width: 768px) {
     #home .hero {
