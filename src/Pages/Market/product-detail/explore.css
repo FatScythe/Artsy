@@ -101,15 +101,14 @@
 @media screen and (max-width: 768px) {
     .explore-container {
         display: block;
-        width: fit-content;
         margin-bottom: 2rem;
     }
 
     .explore-container .explore-card {
         position: relative;
         padding: 0 .5rem;
+        /* width: 398px; */
         min-width: 100%;
-        /* 398px */
         height: 509px;
     }
 
@@ -150,5 +149,9 @@
     .explore-container .explore-card .title svg {
         width: 23px;
         height: 23px;
+    }
+
+    .explore .btn {
+        display: none;
     }
 }

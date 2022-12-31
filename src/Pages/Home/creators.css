@@ -60,6 +60,10 @@ section.creators p {
     margin-top: 1rem;
 }
 
+section.creators .img {
+    transition: ease-in-out all .5s;
+}
+
 section.creators .img div {
     position: absolute;
     bottom: 20%;

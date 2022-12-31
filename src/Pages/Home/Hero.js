@@ -81,10 +81,10 @@ const Hero = () => {
       </div>
 
       <div className='gallery d-md-none'>
-        <img src={mc1} alt='hero-gallery' draggable='false' />
-        <img src={mc2} alt='hero-gallery' draggable='false' />
-        <img src={mc3} alt='hero-gallery' draggable='false' />
+        <img src={mc6} alt='hero-gallery' draggable='false' />
+        <img src={mc5} alt='hero-gallery' draggable='false' />
         <img src={mc4} alt='hero-gallery' draggable='false' />
+        <img src={mc3} alt='hero-gallery' draggable='false' />
       </div>
     </section>
   );

@@ -127,15 +127,16 @@
         position: absolute;
         object-fit: contain;
         width: 75%;
-        height: 400px;
+        height: 300px;
         left: 50%;
         top:50%;
         transform: translate(-50%, -50%);
     }
 
     #home .hero .gallery img:nth-child(1) {
+        height: 400px;
         z-index: 4;
-        top: 10%;
+        top: 5%;
         left: 10%;
         transform: rotate(2deg);
     }

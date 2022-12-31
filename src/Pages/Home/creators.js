@@ -1,12 +1,50 @@
+import { useEffect, useRef, useState } from "react";
+
+// CSS
 import "./creators.css";
+
+// images
 import c1 from "../../images/creators/c1.png";
+import c2 from "../../images/creators/c2.png";
+import c3 from "../../images/creators/c3.png";
+
+// Component
 import { Dotmarker } from "../../Components/Icons/icons";
 
 const Creators = () => {
+  const imageContainer = useRef(null);
+  const [value, setValue] = useState(0);
+
+  const images = [c1, c2, c3];
+
+  useEffect(() => {
+    let timer = setTimeout(() => {
+      imageContainer.current.style.opacity = ".7";
+    }, 4200);
+
+    imageContainer.current.style.opacity = "1";
+    imageContainer.current.setAttribute("src", images[value]);
+
+    let length = images.length;
+    if (value >= length) {
+      setValue(0);
+    }
+
+    return () => clearTimeout(timer);
+  }, [value]);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setValue(value + 1);
+    }, 5000);
+
+    return () => clearInterval(timer);
+  });
+
   return (
     <section className='creators clash'>
       <div className='img'>
-        <img src={c1} alt='creators' />
+        <img src={c1} alt='creators' ref={imageContainer} />
         <div>
           <h3 className='location'>CIRCA</h3>
           <h3 className='year'>1985</h3>
