@@ -1,4 +1,4 @@
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 import {
   Arrow,
   CloseIcon,
@@ -26,7 +26,8 @@ const LiveBidDesktop = ({ url, tag, bid, creator, navigate }) => {
   return (
     <div className='d-none'>
       <h2>
-        home/ auctions/ <span>live bid</span>
+        <Link to='/'>home/</Link>
+        <Link to='/auction'> auctions/</Link> <span>live bid</span>
       </h2>
       <main>
         <div className='img'>

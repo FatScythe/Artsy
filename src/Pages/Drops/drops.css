@@ -2,8 +2,16 @@
     font-weight: 500;
     font-size: var(--text-xs);
     line-height: 51.5px;
-    color: #BCB7B7;
     margin: 1rem 0;
+}
+
+.drops h3 a {
+    color: #BCB7B7;
+}
+
+.drops h3 a:hover {
+    color: var(--blue);
+    text-decoration: underline;
 }
 
 .drops h3 span {

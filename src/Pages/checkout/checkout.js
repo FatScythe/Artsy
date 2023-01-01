@@ -33,7 +33,7 @@ const Checkout = () => {
       </nav>
 
       <Routes>
-        <Route path='cart' element={<Cart />} />
+        <Route path='cart/*' element={<Cart />} />
         <Route path='details' element={<Details />} />
         <Route path='pay' element={<Payment />} />
       </Routes>

@@ -2,7 +2,15 @@
     font-weight: 500;
     font-size: var(--text-xs);
     line-height: 51.5px;
+}
+
+.product-page h3 a {
     color: #BCB787;
+}
+
+.product-page h3 a:hover {
+    color: var(--blue);
+    text-decoration: underline;
 }
 
 .product-page h3 span {

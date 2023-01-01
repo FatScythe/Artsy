@@ -304,6 +304,15 @@ input[type=range]:focus {
         color: var(--gray);
     }
 
+    .search .search-mobile .info p a{
+        color: var(--gray);
+    }
+
+    .search .search-mobile .info p a:hover {
+        color: var(--blue);
+        text-decoration: underline;
+    }
+
     .search .search-mobile .info p:last-child {
         font-style: italic;
     }

@@ -19,14 +19,14 @@ const Creators = () => {
 
   useEffect(() => {
     let timer = setTimeout(() => {
-      imageContainer.current.style.opacity = ".7";
-    }, 4200);
+      imageContainer.current.classList.add("unblur");
+    }, 2000);
 
-    imageContainer.current.style.opacity = "1";
+    imageContainer.current.classList.remove("unblur");
     imageContainer.current.setAttribute("src", images[value]);
 
     let length = images.length;
-    if (value >= length) {
+    if (value > length - 1) {
       setValue(0);
     }
 

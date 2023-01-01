@@ -2,7 +2,6 @@ import { RedLoveIcon } from "../../Components/Icons/icons";
 import "./bids.css";
 
 const Bids = ({ bids }) => {
-  console.log(bids);
   return (
     <section className='bids'>
       <h2>Top bids from popular creators</h2>

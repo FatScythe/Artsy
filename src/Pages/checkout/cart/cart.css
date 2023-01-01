@@ -61,6 +61,14 @@
     line-height: 43.2px;
 }
 
+.checkout .cart .card .info span div button {
+    width: fit-content;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: var(--text-lg);
+    line-height: 43.2px;
+}
+
 .checkout .cart .card .info span div input {
     width: 5%;
     border: 0;

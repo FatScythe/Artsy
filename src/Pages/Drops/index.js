@@ -1,9 +1,13 @@
-import Drop from "./drop";
-import "./drops.css";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
+// CSS
+import "./drops.css";
 
 // Context
 import { useGlobalArtsyContext } from "../../context/context";
+
+// Components
+import Drop from "./drop";
 import NewsLetter from "../Home/newsletter";
 
 const Drops = () => {
@@ -21,7 +25,8 @@ const Drops = () => {
   return (
     <section className='drops container'>
       <h3 className='d-none'>
-        Home/ Auctions/ Live bid/ <span>Drop</span>
+        <Link to='/'>Home/</Link> <Link to='/auction'>Auctions/</Link>
+        <Link to='/live-bid/1'> Live bid/</Link> <span>Drop</span>
       </h3>
 
       <div className='notify'>

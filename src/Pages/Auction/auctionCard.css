@@ -1,12 +1,18 @@
 .auction .auction-card {
-    border-radius: 8px;
     position: relative;
+    transition: ease-in-out all .3s;
+}
+
+.auction .auction-card:hover {
+    transform: scale(0.85);
 }
 
 .auction .auction-card img {
+    border-radius: 10px;
     width: 400px;
     height: 300px;
     object-fit: cover;
+    overflow: hidden;
 }
 
 .auction .auction-card .overlay {

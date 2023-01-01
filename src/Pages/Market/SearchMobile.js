@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+// CSS
 import "./search.css";
 
 const SearchMobile = () => {
@@ -5,7 +7,8 @@ const SearchMobile = () => {
     <main className='d-md-none search-mobile'>
       <div className='info'>
         <p>
-          Home/ Market/<span> Editorials</span>
+          <Link to='/'>Home</Link>/ <Link to='/market'>Market</Link>/
+          <span> Editorials</span>
         </p>
         <p>
           Showing <span>1-5</span> of <span>18</span> results

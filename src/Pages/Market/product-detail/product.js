@@ -1,5 +1,13 @@
-import { useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { useParams, useNavigate, Link } from "react-router-dom";
+
+// Context
+import { useGlobalArtsyContext } from "../../../context/context";
+
+// Component
+import Explore from "./explore";
+import Loader from "../../../Components/Loader/loader";
+import Error from "../../../Components/Error/error";
 import {
   Arrow,
   ChevLeft,
@@ -8,23 +16,38 @@ import {
   EthereumIcon,
   OpaqueLoveIcon,
 } from "../../../Components/Icons/icons";
-import { useGlobalArtsyContext } from "../../../context/context";
-import Explore from "./explore";
+
+// CSS
 import "./product.css";
 
 const Product = () => {
   const { id } = useParams();
-  const { footerContainer, products } = useGlobalArtsyContext();
+  const { footerContainer, products, addItem, cart } = useGlobalArtsyContext();
+
+  const [numberofItems, setNumberOfItems] = useState(1);
+
+  const increaseItem = () => {
+    setNumberOfItems(numberofItems + 1);
+  };
+
+  const decreaseItem = () => {
+    if (numberofItems <= 1) {
+      return;
+    }
+    setNumberOfItems(numberofItems - 1);
+  };
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     footerContainer.current.style.display = "none";
   });
 
   if (products.isLoading) {
-    return <h2>Loading...</h2>;
+    return <Loader />;
   }
   if (products.isError) {
-    return <h2>Error</h2>;
+    return <Error />;
   }
 
   const product = products.data.products.find((product) => product.id === id);
@@ -34,7 +57,9 @@ const Product = () => {
   return (
     <main className='product-page container'>
       <h3>
-        Home/ Marketplace/ Editorials/ <span>{name}</span>
+        <Link to='/'>Home/</Link>
+        <Link to='/market'> Market</Link>/<Link to='/market'> Editorials/</Link>{" "}
+        <span>{name}</span>
       </h3>
       <div className='card'>
         <div className='img'>
@@ -59,12 +84,24 @@ const Product = () => {
               Total views: <span>{views}</span>
             </p>
             <div className='counter'>
-              <button>-</button>
-              <span>1</span>
-              <button>+</button>
+              <button onClick={() => decreaseItem()}>-</button>
+              <span>{numberofItems}</span>
+              <button onClick={() => increaseItem()}>+</button>
             </div>
             <div className='Add'>
-              <button className='btn-cart'>
+              <button
+                className='btn-cart'
+                onClick={() => {
+                  // Checks if item is already in the cart
+                  if (cart.some((item) => item.id === id)) {
+                    navigate("/checkout/cart");
+                    return;
+                  }
+
+                  // Adds item to cart
+                  addItem({ ...product, number: numberofItems, like: false });
+                }}
+              >
                 <span>Add to cart</span>
                 <span className='d-none'>
                   <Arrow />

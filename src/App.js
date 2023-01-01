@@ -1,4 +1,4 @@
-import { Routes, BrowserRouter, Route, Link } from "react-router-dom";
+import { Routes, BrowserRouter, Route, Link, Navigate } from "react-router-dom";
 // components
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/footer";
@@ -14,10 +14,12 @@ import LiveBid from "./Pages/Auction/LiveBid/livebid";
 import Checkout from "./Pages/checkout/checkout";
 import Schedule from "./Pages/checkout/schedule/schedule";
 import Thanks from "./Pages/checkout/thankyou";
-// import Cart from "./Pages/checkout/cart/cart";
+
+// Context
+import { useGlobalArtsyContext } from "./context/context";
 
 function App() {
-  // const [cartIsEmpty, setCartIsEmpty] = useState(true);
+  const { cart } = useGlobalArtsyContext();
   return (
     <div className='App'>
       <BrowserRouter>
@@ -29,11 +31,13 @@ function App() {
           <Route path='/live-bid/:id' element={<LiveBid />} />
           <Route path='/drops' element={<Drops />} />
           <Route path='/product-detail/:id' element={<Product />} />
-          {/* <Route
-            path='/Cart'
-            element={cartIsEmpty ? <Navigate to='/Market' /> : <Cart />}
-          /> */}
-          <Route path='/checkout/*' element={<Checkout />} />
+          <Route
+            path='/checkout/*'
+            element={
+              cart.length === 0 ? <Navigate to='/Market' /> : <Checkout />
+            }
+          />
+          {/* <Route path='/checkout/*' element={<Checkout />} /> */}
           <Route path='/checkout/cart/schedule' element={<Schedule />} />
           <Route path='thanks' element={<Thanks />} />
 

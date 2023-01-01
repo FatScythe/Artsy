@@ -6,8 +6,16 @@
     text-transform: capitalize;
     font-size: var(--text-xs);
     font-weight: 500;
-    color: #BCB7B7;
     line-height: 51.5px;
+}
+
+.live-bid h2 a {
+    color: #BCB7B7;
+}
+
+.live-bid h2 a:hover {
+    color: var(--blue);
+    text-decoration: underline;
 }
 
 .live-bid h2 span {
@@ -163,7 +171,7 @@
     justify-content: flex-start;
     align-items: center;
     gap: 1rem;
-    font-size: var(--text-lg);
+    font-size: var(--text-md);
     line-height: 64px;
     font-weight: 500;
 }
@@ -174,7 +182,7 @@
 
 .live-bid h1 button {
     background-color: transparent;
-    padding: 1.2rem 1rem;
+    padding: 1rem .8rem;
     border: 1px solid #000;
     border-radius: 50%;
 }

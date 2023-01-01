@@ -60,8 +60,13 @@ section.creators p {
     margin-top: 1rem;
 }
 
-section.creators .img {
-    transition: ease-in-out all .5s;
+section.creators .img img {  
+    transition: ease-in-out all 1s;
+    opacity: 1;
+}
+
+section.creators .img img.unblur {
+    opacity: .05;
 }
 
 section.creators .img div {
