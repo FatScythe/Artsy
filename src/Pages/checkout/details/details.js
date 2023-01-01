@@ -7,7 +7,15 @@ import BlueButton from "../../../Components/button/button";
 // CSS
 import "./details.css";
 
-const Details = () => {
+const Details = ({
+  cart,
+  value,
+  setValue,
+  Increase,
+  Decrease,
+  removeItem,
+  total,
+}) => {
   return (
     <section className='details'>
       <p className='navigation d-md-none'>
@@ -81,8 +89,20 @@ const Details = () => {
         </form>
 
         <div className='cart d-none'>
-          <CartCard />
-          <CartTotal />
+          {cart.map((item) => {
+            return (
+              <CartCard
+                key={item.id}
+                {...item}
+                value={value}
+                setValue={setValue}
+                Increase={Increase}
+                Decrease={Decrease}
+                removeItem={removeItem}
+              />
+            );
+          })}
+          <CartTotal total={total} cart={cart} />
         </div>
       </main>
     </section>

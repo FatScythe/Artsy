@@ -13,7 +13,16 @@ import Details from "./details/details";
 import Payment from "./payment/payment";
 
 const Checkout = () => {
-  const { footerContainer } = useGlobalArtsyContext();
+  const {
+    footerContainer,
+    total,
+    cart,
+    value,
+    setValue,
+    Increase,
+    Decrease,
+    removeItem,
+  } = useGlobalArtsyContext();
   useEffect(() => {
     footerContainer.current.style.display = "none";
   });
@@ -33,9 +42,35 @@ const Checkout = () => {
       </nav>
 
       <Routes>
-        <Route path='cart/*' element={<Cart />} />
-        <Route path='details' element={<Details />} />
-        <Route path='pay' element={<Payment />} />
+        <Route
+          path='cart/*'
+          element={
+            <Cart
+              total={total}
+              cart={cart}
+              value={value}
+              setValue={setValue}
+              Increase={Increase}
+              Decrease={Decrease}
+              removeItem={removeItem}
+            />
+          }
+        />
+        <Route
+          path='details'
+          element={
+            <Details
+              total={total}
+              cart={cart}
+              value={value}
+              setValue={setValue}
+              Increase={Increase}
+              Decrease={Decrease}
+              removeItem={removeItem}
+            />
+          }
+        />
+        <Route path='pay' element={<Payment total={total} cart={cart} />} />
       </Routes>
     </section>
   );

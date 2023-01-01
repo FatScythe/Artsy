@@ -14,7 +14,7 @@ import { RadioButton, Secure } from "../../../Components/Icons/icons";
 import "../cart/cart.css";
 import { CartTotal } from "../cart/cart";
 
-const Payment = () => {
+const Payment = ({ total, cart }) => {
   return (
     <section className='payment'>
       <p className='navigation d-md-none'>
@@ -97,7 +97,7 @@ const Payment = () => {
             20222
           </p>
           <div className='cart'>
-            <CartTotal />
+            <CartTotal total={total} cart={cart} />
           </div>
         </div>
       </main>

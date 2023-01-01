@@ -6,13 +6,19 @@ import "./cart.css";
 import BlueButton from "../../../Components/button/button";
 import Schedule from "../schedule/schedule";
 import { CloseIcon } from "../../../Components/Icons/icons";
+// import Loader from "../../../Components/Loader/loader";
 // Context
-import { useGlobalArtsyContext } from "../../../context/context";
+// import { useGlobalArtsyContext } from "../../../context/context";
 
-const Cart = () => {
-  const { total, cart, value, setValue, Increase, Decrease, removeItem } =
-    useGlobalArtsyContext();
-
+const Cart = ({
+  total,
+  cart,
+  value,
+  setValue,
+  Increase,
+  Decrease,
+  removeItem,
+}) => {
   return (
     <section className='cart'>
       <CartNav />

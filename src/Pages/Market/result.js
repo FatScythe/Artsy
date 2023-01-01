@@ -47,7 +47,7 @@ const Card = ({ id, name, price, url }) => {
   const usd = price === undefined ? "3.90" : price.usd;
   return (
     <Link to={`/product-detail/${id}`} className='product-card'>
-      <img src={url} alt={name} />
+      <img src={url} alt={name} draggable={false} />
       <div className='title'>
         <h3>{name}</h3>
         <p>${usd}</p>
