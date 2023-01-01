@@ -163,8 +163,16 @@
 
 @media screen and (max-width: 768px) {
     .checkout .cart .cart-nav p {
-        color: #BCB7B7;
         font-size: var(--text-xs);
+    }
+
+    .checkout .cart .cart-nav p a {
+        color: #BCB7B7;
+    }
+
+    .checkout .cart .cart-nav p a:hover {
+        color: var(--blue);
+        text-decoration: underline;
     }
 
     .checkout .cart .cart-nav p span {

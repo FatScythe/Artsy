@@ -108,6 +108,7 @@ export const CartCard = ({
               className='value'
               onChange={(e) => setValue(e.target.value)}
               value={number}
+              readOnly={true}
             />
             <button className='increase' onClick={() => Increase(id)}>
               +
@@ -130,7 +131,8 @@ export const CartNav = () => {
   return (
     <div className='cart-nav d-md-none'>
       <p>
-        Home/ Marketplace/ <span>Cart</span>
+        <Link to='/'>Home/ </Link>
+        <Link>Marketplace/</Link> <span>Cart</span>
       </p>
       <nav>
         <ul>

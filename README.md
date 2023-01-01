@@ -27,8 +27,8 @@ ___
 
 ### Future Feature
 1. Request Data from an API (done)
-2. Carousel functions (pending)
-3. Cart (pending)
+2. Carousel functions (done)
+3. Cart (done) + LocalStorage
 4. Like and collections (maybe)
 
 ## Available Scripts
