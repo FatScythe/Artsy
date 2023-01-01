@@ -61,7 +61,7 @@ export const CartTotal = ({ total, cart }) => {
 
       <div>
         <span className='title'>Total:</span>
-        <span className='result'>{total}</span>
+        <span className='result'>${total}</span>
       </div>
 
       <div className='grand-total'>
