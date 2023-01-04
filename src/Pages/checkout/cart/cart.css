@@ -162,6 +162,9 @@
 }
 
 @media screen and (max-width: 768px) {
+    .checkout .cart {
+        margin: 3rem 0 2rem;
+    }
     .checkout .cart .cart-nav p {
         font-size: var(--text-xs);
     }
@@ -181,7 +184,7 @@
 
     .checkout .cart .cart-nav nav {
         border: 0;
-        width: 80%;
+        width: 100%;
     }
 
     .checkout .cart .cart-nav nav ul {

@@ -1,4 +1,9 @@
+import { useState } from "react";
+import { NavLink, Link, useNavigate } from "react-router-dom";
+// CSS
 import "./navbar.css";
+
+//Icon
 import {
   CartIcon,
   ChatIcon,
@@ -7,13 +12,16 @@ import {
   NotiIcon,
   SearchIcon,
 } from "../Icons/icons";
-import { useState } from "react";
-import { NavLink, Link, useNavigate } from "react-router-dom";
+// Data
 import { links } from "./Navlinks";
+// Context
+import { useGlobalArtsyContext } from "../../context/context";
 
 const Navbar = () => {
   const [isSiderBarOpen, setIsSideBarOpen] = useState(false);
   const navigate = useNavigate();
+  const { cart } = useGlobalArtsyContext();
+  console.log(cart);
 
   return (
     <nav className='container top-nav'>
@@ -51,19 +59,20 @@ const Navbar = () => {
       </ul>
 
       <div className='nav-btn'>
-        <div className='search-btn'>
+        <button className='search-btn'>
           <Link to='/market'>
             <SearchIcon />
           </Link>
-        </div>
-        <div className='cart-btn'>
+        </button>
+        <button className='cart-btn'>
+          {cart.length !== 0 && <span className='number'>{cart.length}</span>}
           <Link to='/checkout/cart'>
             <CartIcon />
           </Link>
-        </div>
-        <div className='notification-btn'>
+        </button>
+        <button className='notification-btn'>
           <NotiIcon />
-        </div>
+        </button>
       </div>
     </nav>
   );

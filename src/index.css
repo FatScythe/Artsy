@@ -108,6 +108,7 @@ img {
 
 button {
   cursor: pointer;
+  background-color: transparent;
   outline: 0;
   border: 0;
 }

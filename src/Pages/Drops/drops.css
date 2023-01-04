@@ -180,6 +180,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    .drops {
+        margin-top: 3rem;
+    }
+    
     .drops .notify h2 {
         font-weight: 700;
         font-size: var(--text-md);

@@ -86,7 +86,6 @@ export const CartCard = ({
   price,
   url,
   number,
-  value,
   setValue,
   Increase,
   Decrease,
@@ -138,7 +137,7 @@ export const CartNav = () => {
     <div className='cart-nav d-md-none'>
       <p>
         <Link to='/'>Home/ </Link>
-        <Link>Marketplace/</Link> <span>Cart</span>
+        <Link to='/market'>Marketplace/</Link> <span>Cart</span>
       </p>
       <nav>
         <ul>

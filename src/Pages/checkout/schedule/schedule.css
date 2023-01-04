@@ -1,5 +1,5 @@
 .schedule {
-    /* margin: 2rem 0; */
+    margin: 3rem auto 2rem;
 }
 @media screen and (max-width: 768px) {
     .schedule .cart-nav {

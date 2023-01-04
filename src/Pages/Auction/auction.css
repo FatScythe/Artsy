@@ -37,6 +37,9 @@
 }
 
 @media screen and (max-width: 768px) {
+    .auction {
+        margin-top: 3rem;
+    }
     .auction .title p {
         margin: 2rem 0;
         font-size: var(--text-sm);
