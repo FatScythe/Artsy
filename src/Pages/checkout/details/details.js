@@ -19,7 +19,8 @@ const Details = ({
   return (
     <section className='details'>
       <p className='navigation d-md-none'>
-        Home/ Marketplace/ Cart/ <span>Shipping</span>
+        <Link to='/'>Home/</Link> <Link to='/market'>Marketplace/</Link>
+        <Link to='/checkout/cart'> Cart/</Link> <span>Shipping</span>
       </p>
       <main>
         <form>

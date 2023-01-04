@@ -198,11 +198,16 @@
     .payment {
         margin: .8rem 0;
     }
-    .payment .navigation {
+    .payment .navigation a {
         font-weight: 500;
         color: #BCB7B7;
         line-height: 51.5px;
         font-size: 1rem;
+    }
+
+    .payment .navigation a:hover {
+        color: var(--blue);
+        text-decoration: underline;
     }
 
     .payment .secure-payment .secure {

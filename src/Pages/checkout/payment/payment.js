@@ -18,7 +18,9 @@ const Payment = ({ total, cart }) => {
   return (
     <section className='payment'>
       <p className='navigation d-md-none'>
-        Home/ Marketplace/ Cart/ Shipping/ <span>Payment</span>
+        <Link to='/'>Home/</Link> <Link to='/market'>Marketplace/</Link>
+        <Link to='/checkout/cart'> Cart/</Link>
+        <span> Payment</span>
       </p>
       <div className='secure-payment'>
         <p className='d-none h1'>Payment method</p>

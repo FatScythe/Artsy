@@ -106,11 +106,16 @@
 }
 
 @media screen and (max-width: 768px) {
-    .details .navigation {
+    .details .navigation a {
         margin: 1rem 0;
         font-weight: 500;
         color: #BCB7B7;
         line-height: 51.5px;
+    }
+
+    .details .navigation a:hover {
+        color: var(--blue);
+        text-decoration: underline;
     }
 
     .details .navigation span {

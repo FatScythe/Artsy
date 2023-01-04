@@ -161,10 +161,7 @@
     font-size: var(--text-xs);
 }
 
-@media screen and (max-width: 768px) {
-    .checkout .cart {
-        margin: 3rem 0 2rem;
-    }
+@media screen and (max-width: 768px) {    
     .checkout .cart .cart-nav p {
         font-size: var(--text-xs);
     }
