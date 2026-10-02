@@ -22,7 +22,7 @@ const getLocalStorage = () => {
       cart: [],
     };
     localStorage.setItem("localState", JSON.stringify(State));
-    return;
+    return State;
   }
   return JSON.parse(localStorage.getItem("localState"));
 };
