@@ -17,7 +17,7 @@ const Hero = () => {
     { id: 5, img: [mc4, mc3, mc2, mc1, mc6, mc5] },
     { id: 6, img: [mc5, mc4, mc3, mc2, mc1, mc6] },
   ];
-  const [images, setImages] = useState(setOfimages);
+  const [images] = useState(setOfimages);
   const [value, setValue] = useState(0);
 
   useEffect(() => {

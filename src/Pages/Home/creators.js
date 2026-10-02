@@ -11,11 +11,11 @@ import c3 from "../../images/creators/c3.png";
 // Component
 import { Dotmarker } from "../../Components/Icons/icons";
 
+const IMAGES = [c1, c2, c3];
 const Creators = () => {
   const imageContainer = useRef(null);
   const [value, setValue] = useState(0);
 
-  const images = [c1, c2, c3];
 
   useEffect(() => {
     let timer = setTimeout(() => {
@@ -23,9 +23,9 @@ const Creators = () => {
     }, 2000);
 
     imageContainer.current.classList.remove("unblur");
-    imageContainer.current.setAttribute("src", images[value]);
+    imageContainer.current.setAttribute("src", IMAGES[value]);
 
-    let length = images.length;
+    let length = IMAGES.length;
     if (value > length - 1) {
       setValue(0);
     }
